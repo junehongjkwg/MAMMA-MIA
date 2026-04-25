@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Price Plan — MAMMA MIA Marketing Agency</title>
+  <meta name="description" content="Transparent pricing for Social Media Marketing, Branding, Video Production, and Photo Production services by MAMMA MIA." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pricing.css" />
+</head>
+<body>
+
+  <!-- Page Transition Curtain -->
+  <div class="page-curtain" id="pageCurtain"></div>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo">
+      <span style="animation-delay:0.05s">M</span><span style="animation-delay:0.1s">A</span><span style="animation-delay:0.15s">M</span><span style="animation-delay:0.2s">M</span><span style="animation-delay:0.25s">A</span>&nbsp;<span style="animation-delay:0.35s">M</span><span style="animation-delay:0.4s">I</span><span style="animation-delay:0.45s">A</span>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="mainNav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-text" style="color:var(--color-black)">MAMMA MIA</span>
+      </a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">About Us</a>
+        <a href="price-plan.html" class="nav__link active">Price Plan</a>
+        <a href="portfolio.html" class="nav__link">Portfolio</a>
+        <a href="contact.html" class="nav__link">Contact Us</a>
+      </div>
+      <a href="contact.html" class="nav__cta btn btn-outline"><span>Book a Call</span></a>
+      <div class="nav__hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav__mobile-link">About Us</a>
+    <a href="price-plan.html" class="nav__mobile-link">Price Plan</a>
+    <a href="portfolio.html" class="nav__mobile-link">Portfolio</a>
+    <a href="contact.html" class="nav__mobile-link">Contact Us</a>
+  </div>
+
+  <!-- ======== PAGE HERO ======== -->
+  <header class="page-hero">
+    <div class="container">
+      <div class="page-hero__eyebrow reveal">
+        <span class="t-label">Investment in Growth</span>
+      </div>
+      <h1 class="page-hero__title t-display reveal reveal-delay-1">
+        Investment<br /><span style="color:var(--color-accent)">in Growth</span>
+      </h1>
+    </div>
+    <!-- Tab nav -->
+    <div class="pricing-tabs">
+      <div class="container">
+        <div class="pricing-tabs__inner">
+          <button class="pricing-tab active" data-target="social">Social Media Marketing</button>
+          <button class="pricing-tab" data-target="branding">Branding</button>
+          <button class="pricing-tab" data-target="video">Video Production</button>
+          <button class="pricing-tab" data-target="photo">Photo Production</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======== SOCIAL MEDIA MARKETING ======== -->
+  <section class="pricing-section section" id="social">
+    <div class="container">
+      <div class="section-label-row reveal">
+        <span class="t-label">Social Media Marketing</span>
+        <div class="rule"></div>
+      </div>
+      <div class="pricing-cards">
+
+        <div class="pricing-card reveal reveal-delay-1">
+          <div class="pricing-card__tier t-label">Basic</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount">1,000</span>
+            <span class="pricing-card__period">/mo</span>
+          </div>
+          <div class="rule" style="margin:24px 0"></div>
+          <ul class="pricing-card__features">
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>2 Posts Per Week <span>(8 Per Month)</span></li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Hashtag Management</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Instagram Account Setup</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline pricing-card__cta"><span>Get Started</span></a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured reveal reveal-delay-2">
+          <div class="pricing-card__badge t-label">Most Popular</div>
+          <div class="pricing-card__tier t-label">Standard</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount">1,500</span>
+            <span class="pricing-card__period">/mo</span>
+          </div>
+          <div class="rule" style="margin:24px 0;background:rgba(255,255,255,0.12)"></div>
+          <ul class="pricing-card__features">
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Up To 2 Reels Videos <span>(30 Sec Each)</span></li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>2 Posts Per Week <span>(8 Per Month)</span></li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Hashtag Management</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Instagram Account Setup</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary pricing-card__cta"><span>Get Started</span></a>
+        </div>
+
+        <div class="pricing-card reveal reveal-delay-3">
+          <div class="pricing-card__tier t-label">Premium</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount">2,000</span>
+            <span class="pricing-card__period">/mo</span>
+          </div>
+          <div class="rule" style="margin:24px 0"></div>
+          <ul class="pricing-card__features">
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Up To 4 Reels Videos <span>(30 Sec Each)</span></li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>2 Posts Per Week <span>(8 Per Month)</span></li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Hashtag Management</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Instagram Account Setup</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Data Follow-Up &amp; Performance Tracking</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline pricing-card__cta"><span>Get Started</span></a>
+        </div>
+
+        <div class="pricing-card pricing-card--startup reveal reveal-delay-4">
+          <div class="pricing-card__tier t-label">Start-Up</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount">3,100</span>
+            <span class="pricing-card__period">/mo</span>
+          </div>
+          <div class="rule" style="margin:24px 0;background:rgba(255,255,255,0.12)"></div>
+          <ul class="pricing-card__features">
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Up To 4 Reels Videos <span>(30 Sec Each)</span></li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Influencer Marketing</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>3 Posts Per Week <span>(12 Per Month)</span></li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Hashtag Management</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Instagram Account Setup</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Data Follow-Up &amp; Performance Tracking</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary pricing-card__cta"><span>Get Started</span></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== BRANDING ======== -->
+  <section class="pricing-section section branding-v3" id="branding">
+
+    <!-- ① Top: full-width editorial header with oversized price -->
+    <div class="branding-v3__head">
+      <div class="container branding-v3__head-inner">
+        <div class="branding-v3__head-left">
+          <span class="t-label reveal">Branding</span>
+          <h2 class="branding-v3__title reveal reveal-delay-1">Building Brands<br />That Get <em>Chosen.</em></h2>
+          <p class="t-body branding-v3__sub reveal reveal-delay-2">Every touchpoint of your visual identity — crafted with strategy and designed to last. Scope is always tailored to your ambitions.</p>
+        </div>
+        <div class="branding-v3__head-right reveal reveal-delay-1">
+          <div class="branding-v3__price-block">
+            <span class="branding-v3__price-label t-label">Starting From</span>
+            <div class="branding-v3__price-row">
+              <span class="branding-v3__price-cad">CAD</span>
+              <span class="branding-v3__price-num">3,200</span>
+              <span class="branding-v3__price-tilde">~</span>
+            </div>
+            <p class="branding-v3__price-note">Varies by scope &amp; objectives</p>
+          </div>
+          <a href="contact.html" class="btn btn-primary branding-v3__cta">
+            <span>Request a Quote</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ② Divider accent bar -->
+    <div class="branding-v3__divider"></div>
+
+    <!-- ③ Service cards grid -->
+    <div class="container">
+      <div class="branding-v3__grid">
+
+        <div class="branding-v3__card reveal reveal-delay-1">
+          <div class="branding-v3__card-top">
+            <svg class="branding-v3__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="10" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M20 10 L20 4M20 30 L20 36M10 20 L4 20M30 20 L36 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor"/>
+            </svg>
+            <span class="branding-v3__card-num">01</span>
+          </div>
+          <div class="branding-v3__card-tag">Identity</div>
+          <h3 class="branding-v3__card-title">Logo Design</h3>
+          <p class="branding-v3__card-desc">A mark built to last — versatile, distinctive, and unmistakably yours across every medium.</p>
+        </div>
+
+        <div class="branding-v3__card reveal reveal-delay-2">
+          <div class="branding-v3__card-top">
+            <svg class="branding-v3__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="10" width="28" height="18" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M12 16 h16M12 20 h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span class="branding-v3__card-num">02</span>
+          </div>
+          <div class="branding-v3__card-tag">Print</div>
+          <h3 class="branding-v3__card-title">Business Card Design</h3>
+          <p class="branding-v3__card-desc">Physical collateral that makes a confident first impression — every time it changes hands.</p>
+        </div>
+
+        <div class="branding-v3__card reveal reveal-delay-3">
+          <div class="branding-v3__card-top">
+            <svg class="branding-v3__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="4" width="20" height="32" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 12 h12M14 17 h8M14 22 h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span class="branding-v3__card-num">03</span>
+          </div>
+          <div class="branding-v3__card-tag">Print</div>
+          <h3 class="branding-v3__card-title">Poster Design</h3>
+          <p class="branding-v3__card-desc">Campaign-grade visuals designed to stop people in their tracks at any scale.</p>
+        </div>
+
+        <div class="branding-v3__card reveal reveal-delay-1">
+          <div class="branding-v3__card-top">
+            <svg class="branding-v3__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 8 h28 v24 H6 Z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M6 14 h28M14 14 v18M14 19 h20M14 24 h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span class="branding-v3__card-num">04</span>
+          </div>
+          <div class="branding-v3__card-tag">F&amp;B</div>
+          <h3 class="branding-v3__card-title">Restaurant Menu Design</h3>
+          <p class="branding-v3__card-desc">Menus that reflect your brand story, guide decisions, and drive higher order value.</p>
+        </div>
+
+        <div class="branding-v3__card reveal reveal-delay-2">
+          <div class="branding-v3__card-top">
+            <svg class="branding-v3__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 4 h18 l8 8 v24 H8 Z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M26 4 v8 h8" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 18 h12M14 22 h10M14 26 h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span class="branding-v3__card-num">05</span>
+          </div>
+          <div class="branding-v3__card-tag">Print</div>
+          <h3 class="branding-v3__card-title">Brochure &amp; Booklet</h3>
+          <p class="branding-v3__card-desc">Multi-page materials that tell your brand's full story in a way people actually keep.</p>
+        </div>
+
+        <div class="branding-v3__card reveal reveal-delay-3">
+          <div class="branding-v3__card-top">
+            <svg class="branding-v3__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="5" y="7" width="30" height="22" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="20" cy="18" r="5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 33 h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M20 29 v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span class="branding-v3__card-num">06</span>
+          </div>
+          <div class="branding-v3__card-tag">Digital</div>
+          <h3 class="branding-v3__card-title">Social Media Setup</h3>
+          <p class="branding-v3__card-desc">Branded profiles, post templates, and visual guidelines — ready to publish from day one.</p>
+        </div>
+
+      </div>
+
+      <!-- ④ Strategy Audit — full-width foundation card -->
+      <div class="branding-v3__audit reveal">
+        <div class="branding-v3__audit-left">
+          <span class="branding-v3__audit-tag">Foundation</span>
+          <span class="branding-v3__audit-num">07</span>
+          <h3 class="branding-v3__audit-title">Strategy Audit</h3>
+          <p class="branding-v3__audit-desc">A deep review of your brand positioning, competitors, and market opportunity — the foundation every strong brand starts with.</p>
+        </div>
+        <div class="branding-v3__audit-right">
+          <ul class="branding-v3__audit-list">
+            <li><span class="branding-v3__audit-check">→</span>Brand Positioning Analysis</li>
+            <li><span class="branding-v3__audit-check">→</span>Competitor Landscape Review</li>
+            <li><span class="branding-v3__audit-check">→</span>Target Audience Definition</li>
+            <li><span class="branding-v3__audit-check">→</span>Visual Direction Brief</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline branding-v3__audit-cta"><span>Start Your Brand</span></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======== VIDEO PRODUCTION ======== -->
+  <section class="pricing-section section" id="video">
+    <div class="container">
+      <div class="section-label-row reveal">
+        <span class="t-label">Video Production</span>
+        <div class="rule"></div>
+      </div>
+      <div class="pricing-cards pricing-cards--3">
+
+        <div class="pricing-card reveal reveal-delay-1">
+          <div class="pricing-card__tier t-label">Short Form Video</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount">200</span>
+            <span class="pricing-card__period">/video</span>
+          </div>
+          <div class="rule" style="margin:24px 0"></div>
+          <ul class="pricing-card__features">
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>1 Minute Shorts Production</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Optimized For TikTok &amp; Reels</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline pricing-card__cta"><span>Get Started</span></a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured reveal reveal-delay-2">
+          <div class="pricing-card__badge t-label">Full Service</div>
+          <div class="pricing-card__tier t-label">Full Production</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount">1,599</span>
+            <span class="pricing-card__period">/project</span>
+          </div>
+          <div class="rule" style="margin:24px 0;background:rgba(255,255,255,0.12)"></div>
+          <ul class="pricing-card__features">
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Indoor &amp; Outdoor Shooting</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Professional Crew &amp; Gear</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Motion &amp; Typography</li>
+            <li class="pricing-card__note"><svg viewBox="0 0 16 16"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.4"/></svg>Crew Fee Billed Separately</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary pricing-card__cta"><span>Get Started</span></a>
+        </div>
+
+        <div class="pricing-card reveal reveal-delay-3">
+          <div class="pricing-card__tier t-label">Event Coverage</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount">1,999</span>
+            <span class="pricing-card__period">/event</span>
+          </div>
+          <div class="rule" style="margin:24px 0"></div>
+          <ul class="pricing-card__features">
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>High-Impact Event Recap</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Multi-Angle Coverage</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Professional Crew &amp; Gear</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Motion &amp; Typography</li>
+            <li class="pricing-card__note"><svg viewBox="0 0 16 16"><path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.4"/></svg>Crew Fee Billed Separately</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline pricing-card__cta"><span>Get Started</span></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PHOTO PRODUCTION ======== -->
+  <section class="pricing-section section section--alt" id="photo">
+    <div class="container">
+      <div class="section-label-row reveal">
+        <span class="t-label">Photo Production</span>
+        <div class="rule"></div>
+      </div>
+      <div class="pricing-cards">
+
+        <div class="pricing-card reveal reveal-delay-1">
+          <div class="pricing-card__tier t-label">Wedding Photo</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount">300</span>
+            <span class="pricing-card__period">/session</span>
+          </div>
+          <div class="rule" style="margin:24px 0"></div>
+          <ul class="pricing-card__features">
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>iPhone Snapshot Service</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Post-Production Editing Included</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline pricing-card__cta"><span>Get Started</span></a>
+        </div>
+
+        <div class="pricing-card reveal reveal-delay-2">
+          <div class="pricing-card__tier t-label">Starter</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount">500</span>
+            <span class="pricing-card__period">/session</span>
+          </div>
+          <div class="rule" style="margin:24px 0"></div>
+          <ul class="pricing-card__features">
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Small Business / Restaurant</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>10 Photos <span>(Venue &amp; Service)</span></li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>5 Concept Photos</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline pricing-card__cta"><span>Get Started</span></a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured reveal reveal-delay-3">
+          <div class="pricing-card__badge t-label">Best Value</div>
+          <div class="pricing-card__tier t-label">Product Photos</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount">1,000</span>
+            <span class="pricing-card__period">/session</span>
+          </div>
+          <div class="rule" style="margin:24px 0;background:rgba(255,255,255,0.12)"></div>
+          <ul class="pricing-card__features">
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Apparel, Food, Product</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>20 Photos</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary pricing-card__cta"><span>Get Started</span></a>
+        </div>
+
+        <div class="pricing-card reveal reveal-delay-4">
+          <div class="pricing-card__tier t-label">AI Model</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">$</span>
+            <span class="pricing-card__amount">500</span>
+            <span class="pricing-card__period">/model</span>
+          </div>
+          <div class="rule" style="margin:24px 0"></div>
+          <ul class="pricing-card__features">
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Per 1 Model</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Represents Your Brand</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Super Realistic Human-Like Appearance</li>
+            <li><svg viewBox="0 0 16 16"><path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Great Consistency</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline pricing-card__cta"><span>Get Started</span></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== BESPOKE CTA ======== -->
+  <section class="bespoke-cta section--dark">
+    <div class="container">
+      <div class="bespoke-cta__inner reveal">
+        <div class="bespoke-cta__text">
+          <span class="t-label" style="color:rgba(255,255,255,0.4);display:block;margin-bottom:16px">Need Something Custom?</span>
+          <h2 class="t-headline" style="color:var(--color-white)">Need a Tailored<br />Solution?</h2>
+          <p class="t-body" style="margin-top:20px;max-width:440px">We understand that elite requirements don't always fit in boxes. Contact our specialists for a bespoke engagement model.</p>
+        </div>
+        <div class="bespoke-cta__action">
+          <a href="contact.html" class="btn btn-outline-white bespoke-btn">
+            <span>Book a Call</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__brand-name">MAMMA MIA</div>
+      <div class="footer__top">
+        <div class="footer__col">
+          <p class="footer__col-title">Navigation</p>
+          <nav class="footer__col-links">
+            <a href="index.html" class="footer__col-link">About Us</a>
+            <a href="price-plan.html" class="footer__col-link">Price Plan</a>
+            <a href="portfolio.html" class="footer__col-link">Portfolio</a>
+            <a href="contact.html" class="footer__col-link">Contact Us</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Contact</p>
+          <div class="footer__contact-item">
+            <p class="footer__contact-label">Email</p>
+            <a href="mailto:inquiry.mammamia@gmail.com" class="footer__contact-value footer__col-link">inquiry.mammamia@gmail.com</a>
+          </div>
+          <div class="footer__contact-item">
+            <p class="footer__contact-label">Address</p>
+            <p class="footer__contact-value">6511 Sussex Ave, Burnaby, BC V5H 0K5</p>
+          </div>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Services</p>
+          <nav class="footer__col-links">
+            <a href="portfolio.html" class="footer__col-link">Social Media Marketing</a>
+            <a href="portfolio.html" class="footer__col-link">Branding</a>
+            <a href="portfolio.html" class="footer__col-link">Video Production</a>
+            <a href="portfolio.html" class="footer__col-link">Photo Production</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 MAMMA MIA Marketing Agency. All rights reserved.</p>
+        <p class="footer__copy">Vancouver, BC, Canada</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/pricing.js"></script>
+</body>
+</html>

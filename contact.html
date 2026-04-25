@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — MAMMA MIA Marketing Agency</title>
+  <meta name="description" content="Get in touch with MAMMA MIA — Vancouver's premier marketing agency. Book a strategy call or send us a message." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+  <!-- Page Transition Curtain -->
+  <div class="page-curtain" id="pageCurtain"></div>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo">
+      <span style="animation-delay:0.05s">M</span><span style="animation-delay:0.1s">A</span><span style="animation-delay:0.15s">M</span><span style="animation-delay:0.2s">M</span><span style="animation-delay:0.25s">A</span>&nbsp;<span style="animation-delay:0.35s">M</span><span style="animation-delay:0.4s">I</span><span style="animation-delay:0.45s">A</span>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="mainNav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-text" style="color:var(--color-black)">MAMMA MIA</span>
+      </a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">About Us</a>
+        <a href="price-plan.html" class="nav__link">Price Plan</a>
+        <a href="portfolio.html" class="nav__link">Portfolio</a>
+        <a href="contact.html" class="nav__link active">Contact Us</a>
+      </div>
+      <a href="contact.html" class="nav__cta btn btn-outline"><span>Book a Call</span></a>
+      <div class="nav__hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav__mobile-link">About Us</a>
+    <a href="price-plan.html" class="nav__mobile-link">Price Plan</a>
+    <a href="portfolio.html" class="nav__mobile-link">Portfolio</a>
+    <a href="contact.html" class="nav__mobile-link">Contact Us</a>
+  </div>
+
+  <!-- ======== CONTACT HERO ======== -->
+  <header class="contact-hero">
+    <div class="container">
+      <div class="contact-hero__inner">
+        <div class="contact-hero__left">
+          <span class="t-label reveal" style="color:var(--color-gray-400)">Contact Us</span>
+          <h1 class="t-display contact-hero__title reveal reveal-delay-1">
+            Let's Build<br /><span style="color:var(--color-accent)">Something</span><br />Great.
+          </h1>
+          <p class="t-body reveal reveal-delay-2" style="max-width:400px; margin-top:24px">
+            Whether you're launching a brand, growing your social presence, or need a production partner — we'd love to hear from you.
+          </p>
+
+          <!-- Contact Info Cards -->
+          <div class="contact-info-cards reveal reveal-delay-3">
+            <div class="contact-info-card">
+              <div class="contact-info-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="M2 7l10 7 10-7"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-info-card__label t-label">Email</p>
+                <a href="mailto:inquiry.mammamia@gmail.com" class="contact-info-card__value">inquiry.mammamia@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                  <circle cx="12" cy="9" r="2.5"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-info-card__label t-label">Address</p>
+                <p class="contact-info-card__value">6511 Sussex Ave, Burnaby, BC V5H 0K5</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 6v6l4 2"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-info-card__label t-label">Response Time</p>
+                <p class="contact-info-card__value">Within 24 Business Hours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======== CONTACT FORM ======== -->
+        <div class="contact-form-wrap reveal reveal-delay-2">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="contact-form__header">
+              <span class="t-label">Send a Message</span>
+              <p class="t-body-sm" style="margin-top:8px; color:var(--color-gray-400)">Fill out the form and we'll get back to you soon.</p>
+            </div>
+
+            <!-- Service Interest -->
+            <div class="form-group">
+              <label class="form-label t-label" for="service">I'm interested in</label>
+              <div class="form-select-wrap">
+                <select class="form-control form-select" id="service" name="service">
+                  <option value="">Select a Service</option>
+                  <option value="social">Social Media Marketing</option>
+                  <option value="branding">Branding</option>
+                  <option value="video">Video Production</option>
+                  <option value="photo">Photo Production</option>
+                  <option value="multiple">Multiple Services</option>
+                  <option value="other">Not Sure / Let's Talk</option>
+                </select>
+                <svg class="form-select-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6l4 4 4-4"/></svg>
+              </div>
+            </div>
+
+            <!-- Name & Email row -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label t-label" for="name">Name</label>
+                <input class="form-control" type="text" id="name" name="name" placeholder="Your name" required />
+                <span class="form-error" id="nameError">Please enter your name.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label t-label" for="email">Email</label>
+                <input class="form-control" type="email" id="email" name="email" placeholder="your@email.com" required />
+                <span class="form-error" id="emailError">Please enter a valid email.</span>
+              </div>
+            </div>
+
+            <!-- Company (optional) -->
+            <div class="form-group">
+              <label class="form-label t-label" for="company">Company <span style="opacity:0.5;font-weight:400;letter-spacing:0">(Optional)</span></label>
+              <input class="form-control" type="text" id="company" name="company" placeholder="Your company or brand name" />
+            </div>
+
+            <!-- Budget -->
+            <div class="form-group">
+              <label class="form-label t-label">Estimated Budget</label>
+              <div class="budget-options">
+                <label class="budget-option">
+                  <input type="radio" name="budget" value="under-1k" />
+                  <span>Under $1K</span>
+                </label>
+                <label class="budget-option">
+                  <input type="radio" name="budget" value="1k-3k" />
+                  <span>$1K – $3K</span>
+                </label>
+                <label class="budget-option">
+                  <input type="radio" name="budget" value="3k-5k" />
+                  <span>$3K – $5K</span>
+                </label>
+                <label class="budget-option">
+                  <input type="radio" name="budget" value="5k-plus" />
+                  <span>$5K+</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label class="form-label t-label" for="message">Message</label>
+              <textarea class="form-control form-textarea" id="message" name="message" placeholder="Tell us about your project, goals, and timeline..." rows="5" required></textarea>
+              <span class="form-error" id="messageError">Please enter a message.</span>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
+              <span class="form-submit__text">Send Message</span>
+              <svg class="form-submit__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+              <span class="form-submit__spinner" style="display:none">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spin"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              </span>
+            </button>
+
+            <!-- Success message -->
+            <div class="form-success" id="formSuccess" style="display:none">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+              <div>
+                <strong>Message sent!</strong>
+                <p>Thank you for reaching out. We'll be in touch within 24 hours.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======== VISION / PORTFOLIO GALLERY SECTION ======== -->
+  <section class="location-section">
+    <div class="container">
+      <div class="section-label-row reveal">
+        <span class="t-label">Our Vision</span>
+        <div class="rule"></div>
+      </div>
+      <div class="location-layout reveal reveal-delay-1">
+        <div class="location-info">
+          <h2 class="t-subheadline" style="margin-bottom:20px">Built to<br />Make You Chosen.</h2>
+          <p class="t-body" style="margin-bottom:20px">We believe every brand has the potential to dominate its space — when given the right strategy, creative direction, and execution. MAMMA MIA exists to be that unfair advantage for ambitious brands across Vancouver and beyond.</p>
+          <p class="t-body">We don't follow trends. We study markets, decode audiences, and craft campaigns that compound in value over time. Strategy-first. Results-driven. Always.</p>
+          <div class="location-details">
+            <div class="location-detail">
+              <span class="t-label">Studio Address</span>
+              <p>6511 Sussex Ave<br />Burnaby, BC V5H 0K5<br />Canada</p>
+            </div>
+            <div class="location-detail">
+              <span class="t-label">Office Hours</span>
+              <p>Monday – Friday<br />9:00 AM – 6:00 PM PST</p>
+            </div>
+          </div>
+        </div>
+        <div class="location-map">
+          <div class="portfolio-mosaic" id="contactMosaic">
+            <!-- JS will populate random portfolio images -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FAQ SECTION ======== -->
+  <section class="faq-section section">
+    <div class="container">
+      <div class="section-label-row reveal">
+        <span class="t-label">Frequently Asked</span>
+        <div class="rule"></div>
+      </div>
+      <h2 class="t-headline reveal" style="margin-bottom:60px; max-width:500px">Common<br />Questions</h2>
+
+      <div class="faq-list reveal reveal-delay-1">
+
+        <div class="faq-item" data-open="false">
+          <button class="faq-question">
+            <span>How long does a typical project take?</span>
+            <svg class="faq-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6l4 4 4-4"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Project timelines vary by scope. Social media retainers start immediately after onboarding (2–3 days). Branding projects typically take 2–4 weeks. Video and photo productions depend on scheduling, but most are completed within 1–2 weeks from shoot date.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-open="false">
+          <button class="faq-question">
+            <span>Do you work with clients outside of Vancouver?</span>
+            <svg class="faq-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6l4 4 4-4"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! We work with clients across Canada and internationally. For content creation and production, we primarily operate in the Greater Vancouver area, but we're open to traveling for larger projects. Strategy and social media management are fully remote.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-open="false">
+          <button class="faq-question">
+            <span>What is your payment process?</span>
+            <svg class="faq-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6l4 4 4-4"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>We typically require a 50% deposit to begin work, with the remainder due upon project completion. Monthly retainer packages are billed at the start of each month. We accept e-Transfer, credit card, and PayPal.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-open="false">
+          <button class="faq-question">
+            <span>Can I see examples of your work before committing?</span>
+            <svg class="faq-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6l4 4 4-4"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. You can browse our <a href="portfolio.html" style="color:var(--color-accent)">Portfolio</a> page for a selection of our recent work. We're also happy to share additional case studies and references during a discovery call.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-open="false">
+          <button class="faq-question">
+            <span>Do you offer custom packages?</span>
+            <svg class="faq-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6l4 4 4-4"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Our <a href="price-plan.html" style="color:var(--color-accent)">Price Plan</a> tiers serve as a starting point. We regularly combine services and customize scope for clients with specific needs. Just reach out and we'll put together a tailored proposal.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__brand-name">MAMMA MIA</div>
+      <div class="footer__top">
+        <div class="footer__col">
+          <p class="footer__col-title">Navigation</p>
+          <nav class="footer__col-links">
+            <a href="index.html" class="footer__col-link">About Us</a>
+            <a href="price-plan.html" class="footer__col-link">Price Plan</a>
+            <a href="portfolio.html" class="footer__col-link">Portfolio</a>
+            <a href="contact.html" class="footer__col-link">Contact Us</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Contact</p>
+          <div class="footer__contact-item">
+            <p class="footer__contact-label">Email</p>
+            <a href="mailto:inquiry.mammamia@gmail.com" class="footer__contact-value footer__col-link">inquiry.mammamia@gmail.com</a>
+          </div>
+          <div class="footer__contact-item">
+            <p class="footer__contact-label">Address</p>
+            <p class="footer__contact-value">6511 Sussex Ave, Burnaby, BC V5H 0K5</p>
+          </div>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Services</p>
+          <nav class="footer__col-links">
+            <a href="portfolio.html" class="footer__col-link">Social Media Marketing</a>
+            <a href="portfolio.html" class="footer__col-link">Branding</a>
+            <a href="portfolio.html" class="footer__col-link">Video Production</a>
+            <a href="portfolio.html" class="footer__col-link">Photo Production</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 MAMMA MIA Marketing Agency. All rights reserved.</p>
+        <p class="footer__copy">Vancouver, BC, Canada</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

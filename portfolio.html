@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — MAMMA MIA Marketing Agency</title>
+  <meta name="description" content="Explore MAMMA MIA's portfolio of Social Media Marketing, Branding, Video Production, and Photo Production work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+</head>
+<body>
+
+  <!-- Page Transition Curtain -->
+  <div class="page-curtain" id="pageCurtain"></div>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo">
+      <span style="animation-delay:0.05s">M</span><span style="animation-delay:0.1s">A</span><span style="animation-delay:0.15s">M</span><span style="animation-delay:0.2s">M</span><span style="animation-delay:0.25s">A</span>&nbsp;<span style="animation-delay:0.35s">M</span><span style="animation-delay:0.4s">I</span><span style="animation-delay:0.45s">A</span>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="mainNav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-text" style="color:var(--color-black)">MAMMA MIA</span>
+      </a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">About Us</a>
+        <a href="price-plan.html" class="nav__link">Price Plan</a>
+        <a href="portfolio.html" class="nav__link active">Portfolio</a>
+        <a href="contact.html" class="nav__link">Contact Us</a>
+      </div>
+      <a href="contact.html" class="nav__cta btn btn-outline"><span>Book a Call</span></a>
+      <div class="nav__hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav__mobile-link">About Us</a>
+    <a href="price-plan.html" class="nav__mobile-link">Price Plan</a>
+    <a href="portfolio.html" class="nav__mobile-link">Portfolio</a>
+    <a href="contact.html" class="nav__mobile-link">Contact Us</a>
+  </div>
+
+  <!-- ======== PAGE HERO ======== -->
+  <header class="page-hero port-hero">
+    <div class="container">
+      <div class="page-hero__eyebrow reveal">
+        <span class="t-label">Our Work</span>
+      </div>
+      <h1 class="page-hero__title t-display reveal reveal-delay-1">
+        Work That<br /><span style="color:var(--color-accent)">Moves</span>
+      </h1>
+      <p class="page-hero__sub t-body reveal reveal-delay-2">
+        From concept to execution — a selection of campaigns, brands, and productions we've been proud to craft.
+      </p>
+    </div>
+  </header>
+
+  <!-- ======== FILTER BAR ======== -->
+  <div class="filter-bar" id="filterBar">
+    <div class="container">
+      <div class="filter-bar__inner">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="social">Social Media Marketing</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="video">Video Production</button>
+        <button class="filter-btn" data-filter="photo">Photo Production</button>
+      </div>
+      <div class="filter-bar__count">
+        <span id="portfolioCount">24</span> <span class="t-label">Projects</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== PORTFOLIO GRID ======== -->
+  <main class="section portfolio-section">
+    <div class="container">
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <!-- Social Media Marketing items -->
+        <article class="port-card" data-category="social">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #0d1b4b 0%, #2a3bff 100%)">
+              <div class="port-card__pattern port-card__pattern--1"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Social Media Marketing</span>
+            <h3 class="port-card__title">Pacific Rim Restaurant — Instagram Campaign</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="branding">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #1a1a1a 0%, #3a3a3a 100%)">
+              <div class="port-card__pattern port-card__pattern--2"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Branding</span>
+            <h3 class="port-card__title">Hana Skincare — Complete Brand Identity</h3>
+          </div>
+        </article>
+
+        <article class="port-card port-card--wide" data-category="video">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #0a0a0a 0%, #1a2bcc 100%)">
+              <div class="port-card__pattern port-card__pattern--3"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Video Production</span>
+            <h3 class="port-card__title">Vancouver Night Market — Event Coverage Film</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="photo">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #2d1b00 0%, #7a4a10 100%)">
+              <div class="port-card__pattern port-card__pattern--4"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Photo Production</span>
+            <h3 class="port-card__title">Maple & Co. — Product Photography</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="social">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #001a0d 0%, #006633 100%)">
+              <div class="port-card__pattern port-card__pattern--1"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Social Media Marketing</span>
+            <h3 class="port-card__title">Greens & Grains — Monthly Content Plan</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="branding">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #2a0020 0%, #8b0050 100%)">
+              <div class="port-card__pattern port-card__pattern--2"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Branding</span>
+            <h3 class="port-card__title">Vela Studio — Logo & Collateral Design</h3>
+          </div>
+        </article>
+
+        <article class="port-card port-card--tall" data-category="photo">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #0d0d2b 0%, #3b3baa 100%)">
+              <div class="port-card__pattern port-card__pattern--3"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Photo Production</span>
+            <h3 class="port-card__title">Blue Horizon Hotel — Interior & Lifestyle Shots</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="video">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #1a0a00 0%, #cc4400 100%)">
+              <div class="port-card__pattern port-card__pattern--4"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Video Production</span>
+            <h3 class="port-card__title">Ember Grill — TikTok Short-Form Series</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="social">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #00141a 0%, #004d66 100%)">
+              <div class="port-card__pattern port-card__pattern--1"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Social Media Marketing</span>
+            <h3 class="port-card__title">Seawall Coffee — Influencer Partnership Campaign</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="branding">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #1a1400 0%, #665500 100%)">
+              <div class="port-card__pattern port-card__pattern--2"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Branding</span>
+            <h3 class="port-card__title">Miso Modern — Restaurant Menu & Brand Refresh</h3>
+          </div>
+        </article>
+
+        <article class="port-card port-card--wide" data-category="social">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #0d1b4b 0%, #4a1b8b 100%)">
+              <div class="port-card__pattern port-card__pattern--3"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Social Media Marketing</span>
+            <h3 class="port-card__title">Kinetic Athletics — 3-Month Growth Campaign</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="video">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #001a08 0%, #2a8b40 100%)">
+              <div class="port-card__pattern port-card__pattern--4"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Video Production</span>
+            <h3 class="port-card__title">Summit Outdoor Co. — Brand Film</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="photo">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #1a0f00 0%, #8b5e00 100%)">
+              <div class="port-card__pattern port-card__pattern--1"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Photo Production</span>
+            <h3 class="port-card__title">Artisan Bake House — Food Photography</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="branding">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #0a001a 0%, #5500aa 100%)">
+              <div class="port-card__pattern port-card__pattern--2"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Branding</span>
+            <h3 class="port-card__title">NovaTech Startup — Full Brand Launch Package</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="video">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #001414 0%, #005555 100%)">
+              <div class="port-card__pattern port-card__pattern--3"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Video Production</span>
+            <h3 class="port-card__title">Anchor Bay Fitness — Reels Content Series</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="photo">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #1a000a 0%, #880022 100%)">
+              <div class="port-card__pattern port-card__pattern--4"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Photo Production</span>
+            <h3 class="port-card__title">Crimson Apparel — Lookbook Shoot</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="social">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #001a1a 0%, #008888 100%)">
+              <div class="port-card__pattern port-card__pattern--1"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Social Media Marketing</span>
+            <h3 class="port-card__title">Tidal Yoga — Community Growth Strategy</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="branding">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #0a0a00 0%, #555500 100%)">
+              <div class="port-card__pattern port-card__pattern--2"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Branding</span>
+            <h3 class="port-card__title">Solera Wines — Label & Packaging Design</h3>
+          </div>
+        </article>
+
+        <article class="port-card port-card--wide" data-category="video">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #1a0014 0%, #8b006e 100%)">
+              <div class="port-card__pattern port-card__pattern--3"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Video Production</span>
+            <h3 class="port-card__title">The Grand Ballroom — Wedding Event Highlight</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="photo">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #001400 0%, #007700 100%)">
+              <div class="port-card__pattern port-card__pattern--4"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Photo Production</span>
+            <h3 class="port-card__title">Grove Market — Fresh Produce Campaign</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="social">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #14001a 0%, #6600aa 100%)">
+              <div class="port-card__pattern port-card__pattern--1"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Social Media Marketing</span>
+            <h3 class="port-card__title">Luminary Beauty — Launch Day Campaign</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="branding">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #001a14 0%, #006655 100%)">
+              <div class="port-card__pattern port-card__pattern--2"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Branding</span>
+            <h3 class="port-card__title">Cedar &amp; Co. — Eco Brand Identity</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="video">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #1a0800 0%, #aa5500 100%)">
+              <div class="port-card__pattern port-card__pattern--3"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Video Production</span>
+            <h3 class="port-card__title">Blaze Kitchen — Cooking Demo Series</h3>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="photo">
+          <div class="port-card__thumb">
+            <div class="port-card__img" style="background: linear-gradient(135deg, #0a0a1a 0%, #3333aa 100%)">
+              <div class="port-card__pattern port-card__pattern--4"></div>
+            </div>
+            <div class="port-card__overlay">
+              <a href="#" class="port-card__view btn-arrow">View Project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+          <div class="port-card__info">
+            <span class="port-card__cat tag tag--accent">Photo Production</span>
+            <h3 class="port-card__title">Indigo Studio — AI Model Campaign</h3>
+          </div>
+        </article>
+
+      </div>
+      <!-- No results state -->
+      <div class="portfolio-empty" id="portfolioEmpty" style="display:none">
+        <p class="t-label">No projects found in this category yet.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ======== CTA BAND ======== -->
+  <section class="cta-band section--dark" style="padding:clamp(80px,10vw,120px) 0; border-top:1px solid rgba(255,255,255,0.06)">
+    <div class="container">
+      <div class="cta-band__inner reveal">
+        <span class="t-label" style="color:rgba(255,255,255,0.4)">Let's Create Together</span>
+        <h2 class="cta-band__headline t-headline">Ready to Start<br />Your Project?</h2>
+        <div class="cta-band__actions">
+          <a href="contact.html" class="btn btn-outline-white">
+            <span>Book a Call</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__brand-name">MAMMA MIA</div>
+      <div class="footer__top">
+        <div class="footer__col">
+          <p class="footer__col-title">Navigation</p>
+          <nav class="footer__col-links">
+            <a href="index.html" class="footer__col-link">About Us</a>
+            <a href="price-plan.html" class="footer__col-link">Price Plan</a>
+            <a href="portfolio.html" class="footer__col-link">Portfolio</a>
+            <a href="contact.html" class="footer__col-link">Contact Us</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Contact</p>
+          <div class="footer__contact-item">
+            <p class="footer__contact-label">Email</p>
+            <a href="mailto:inquiry.mammamia@gmail.com" class="footer__contact-value footer__col-link">inquiry.mammamia@gmail.com</a>
+          </div>
+          <div class="footer__contact-item">
+            <p class="footer__contact-label">Address</p>
+            <p class="footer__contact-value">6511 Sussex Ave, Burnaby, BC V5H 0K5</p>
+          </div>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Services</p>
+          <nav class="footer__col-links">
+            <a href="portfolio.html" class="footer__col-link">Social Media Marketing</a>
+            <a href="portfolio.html" class="footer__col-link">Branding</a>
+            <a href="portfolio.html" class="footer__col-link">Video Production</a>
+            <a href="portfolio.html" class="footer__col-link">Photo Production</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 MAMMA MIA Marketing Agency. All rights reserved.</p>
+        <p class="footer__copy">Vancouver, BC, Canada</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>

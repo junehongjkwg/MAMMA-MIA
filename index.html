@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAMMA MIA — Vancouver Marketing Agency</title>
+  <meta name="description" content="MAMMA MIA is a Vancouver-based marketing agency specializing in Social Media Marketing, Branding, Video Production, and Photo Production." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+  <!-- Page Transition Curtain -->
+  <div class="page-curtain" id="pageCurtain"></div>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo">
+      <span style="animation-delay:0.05s">M</span><span style="animation-delay:0.1s">A</span><span style="animation-delay:0.15s">M</span><span style="animation-delay:0.2s">M</span><span style="animation-delay:0.25s">A</span>&nbsp;<span style="animation-delay:0.35s">M</span><span style="animation-delay:0.4s">I</span><span style="animation-delay:0.45s">A</span>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Navigation -->
+  <nav class="nav nav--dark" id="mainNav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-text">MAMMA MIA</span>
+      </a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link active">About Us</a>
+        <a href="price-plan.html" class="nav__link">Price Plan</a>
+        <a href="portfolio.html" class="nav__link">Portfolio</a>
+        <a href="contact.html" class="nav__link">Contact Us</a>
+      </div>
+      <a href="contact.html" class="nav__cta btn btn-outline-white"><span>Book a Call</span></a>
+      <div class="nav__hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav__mobile-link">About Us</a>
+    <a href="price-plan.html" class="nav__mobile-link">Price Plan</a>
+    <a href="portfolio.html" class="nav__mobile-link">Portfolio</a>
+    <a href="contact.html" class="nav__mobile-link">Contact Us</a>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       HERO — Full viewport, parallax image
+  ══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <!-- Hero slideshow layer -->
+    <div class="hero__parallax" id="heroParallax">
+      <div class="hero__slides" id="heroSlides">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1920&q=85&auto=format&fit=crop"
+          alt="MAMMA MIA team" class="hero__slide active" />
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&q=85&auto=format&fit=crop"
+          alt="Creative strategy session" class="hero__slide" />
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&q=85&auto=format&fit=crop"
+          alt="Marketing team at work" class="hero__slide" />
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1920&q=85&auto=format&fit=crop"
+          alt="Business growth meeting" class="hero__slide" />
+        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920&q=85&auto=format&fit=crop"
+          alt="Agency creative work" class="hero__slide" />
+      </div>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__grid-lines"></div>
+
+    <!-- Content -->
+    <div class="container hero__content">
+      <div class="hero__eyebrow">
+        <span class="t-label">Vancouver · BC · Canada</span>
+        <span class="hero__dot"></span>
+        <span class="t-label">Est. 2023</span>
+      </div>
+      <!-- Split-text headline -->
+      <h1 class="hero__headline">
+        <span class="hero__word" data-delay="0">Strategy</span>
+        <span class="hero__word hero__word--accent" data-delay="1">Changes</span>
+        <span class="hero__word" data-delay="2">Everything</span>
+      </h1>
+      <div class="hero__bottom-row">
+        <p class="hero__sub t-body">
+          From market analysis to execution — we build<br />
+          strategies that drive measurable business growth.
+        </p>
+        <div class="hero__actions">
+          <a href="contact.html" class="btn btn-outline-white">
+            <span>Book a Call</span>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" id="heroScroll">
+      <div class="hero__scroll-line"></div>
+      <span class="t-label">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       MARQUEE
+  ══════════════════════════════════════════ -->
+  <div class="marquee-strip section--dark" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack">
+      <span>Social Media Marketing</span><span class="marquee-dot">✦</span>
+      <span>Branding</span><span class="marquee-dot">✦</span>
+      <span>Video Production</span><span class="marquee-dot">✦</span>
+      <span>Photo Production</span><span class="marquee-dot">✦</span>
+      <span>Social Media Marketing</span><span class="marquee-dot">✦</span>
+      <span>Branding</span><span class="marquee-dot">✦</span>
+      <span>Video Production</span><span class="marquee-dot">✦</span>
+      <span>Photo Production</span><span class="marquee-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       INTRO STATEMENT — Large editorial text
+  ══════════════════════════════════════════ -->
+  <section class="section intro-block">
+    <div class="container">
+      <div class="intro-block__inner">
+        <span class="t-label intro-block__label reveal">About MAMMA MIA</span>
+        <h2 class="intro-block__statement reveal reveal-delay-1">
+          <span class="intro-line-1">We don't just manage accounts —</span>
+          <span class="intro-line-2">we build brands that get chosen.</span>
+        </h2>
+        <div class="intro-block__sub-row reveal reveal-delay-2">
+          <p class="t-body intro-block__desc">
+            A Vancouver-based creative marketing agency working with restaurants, retailers, startups, and lifestyle brands across BC. Strategy-first. Results-driven.
+          </p>
+          <a href="contact.html" class="btn-arrow intro-block__cta">
+            Work With Us
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SERVICES — Sticky scroll storytelling
+       스크롤 내리면 왼쪽 이미지가 교체되고
+       오른쪽 텍스트가 고정되어 순서대로 등장
+  ══════════════════════════════════════════ -->
+  <section class="sticky-services" id="services" aria-label="Our Services">
+
+    <!-- Sticky image panel (left) — 서비스별 4-6장 슬라이드 -->
+    <div class="sticky-services__visual" id="stickyVisual">
+      <div class="sticky-services__img-wrap" id="stickyImgWrap">
+
+        <!-- 0: Social Media Marketing (5장) -->
+        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=900&q=80&auto=format&fit=crop"
+          alt="Social Media Marketing" class="sticky-services__img active" data-service="0" data-slide="0" />
+        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=900&q=80&auto=format&fit=crop"
+          alt="Social Media Marketing 2" class="sticky-services__img" data-service="0" data-slide="1" />
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=80&auto=format&fit=crop"
+          alt="Social Media Marketing 3" class="sticky-services__img" data-service="0" data-slide="2" />
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=900&q=80&auto=format&fit=crop"
+          alt="Social Media Marketing 4" class="sticky-services__img" data-service="0" data-slide="3" />
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&q=80&auto=format&fit=crop"
+          alt="Social Media Marketing 5" class="sticky-services__img" data-service="0" data-slide="4" />
+
+        <!-- 1: Branding (5장) -->
+        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=900&q=80&auto=format&fit=crop"
+          alt="Branding" class="sticky-services__img" data-service="1" data-slide="0" />
+        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=900&q=80&auto=format&fit=crop"
+          alt="Branding 2" class="sticky-services__img" data-service="1" data-slide="1" />
+        <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=900&q=80&auto=format&fit=crop"
+          alt="Branding 3" class="sticky-services__img" data-service="1" data-slide="2" />
+        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=900&q=80&auto=format&fit=crop"
+          alt="Branding 4" class="sticky-services__img" data-service="1" data-slide="3" />
+        <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=900&q=80&auto=format&fit=crop"
+          alt="Branding 5" class="sticky-services__img" data-service="1" data-slide="4" />
+
+        <!-- 2: Video Production (5장) -->
+        <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=900&q=80&auto=format&fit=crop"
+          alt="Video Production" class="sticky-services__img" data-service="2" data-slide="0" />
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=900&q=80&auto=format&fit=crop"
+          alt="Video Production 2" class="sticky-services__img" data-service="2" data-slide="1" />
+        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=900&q=80&auto=format&fit=crop"
+          alt="Video Production 3" class="sticky-services__img" data-service="2" data-slide="2" />
+        <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=900&q=80&auto=format&fit=crop"
+          alt="Video Production 4" class="sticky-services__img" data-service="2" data-slide="3" />
+        <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=900&q=80&auto=format&fit=crop"
+          alt="Video Production 5" class="sticky-services__img" data-service="2" data-slide="4" />
+
+        <!-- 3: Photo Production (5장) -->
+        <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=900&q=80&auto=format&fit=crop"
+          alt="Photo Production" class="sticky-services__img" data-service="3" data-slide="0" />
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&q=80&auto=format&fit=crop"
+          alt="Photo Production 2" class="sticky-services__img" data-service="3" data-slide="1" />
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&q=80&auto=format&fit=crop"
+          alt="Photo Production 3" class="sticky-services__img" data-service="3" data-slide="2" />
+        <img src="https://images.unsplash.com/photo-1542038374416-4e11a48e74e4?w=900&q=80&auto=format&fit=crop"
+          alt="Photo Production 4" class="sticky-services__img" data-service="3" data-slide="3" />
+        <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=900&q=80&auto=format&fit=crop"
+          alt="Photo Production 5" class="sticky-services__img" data-service="3" data-slide="4" />
+
+      </div>
+
+      <!-- 슬라이드 도트 인디케이터 -->
+      <div class="sticky-services__dots" id="svcDots">
+        <span class="sticky-services__dot active"></span>
+        <span class="sticky-services__dot"></span>
+        <span class="sticky-services__dot"></span>
+        <span class="sticky-services__dot"></span>
+        <span class="sticky-services__dot"></span>
+      </div>
+
+      <!-- floating service counter -->
+      <div class="sticky-services__counter">
+        <span class="sticky-services__counter-cur" id="svcCounterCur">01</span>
+        <span class="sticky-services__counter-sep">/</span>
+        <span class="sticky-services__counter-total">04</span>
+      </div>
+    </div>
+
+    <!-- Scrollable text panels (right) -->
+    <div class="sticky-services__panels" id="stickyPanels">
+
+      <div class="sticky-services__panel" data-index="0">
+        <div class="sticky-services__panel-inner">
+          <span class="t-label sticky-services__num">01</span>
+          <h2 class="sticky-services__title">Social Media<br />Marketing</h2>
+          <p class="t-body sticky-services__desc">Read the market, understand your customers, and design a roadmap for growth. We craft content strategies that convert followers into loyal customers — with data-led decisions at every step.</p>
+          <ul class="sticky-services__list">
+            <li>Content strategy &amp; calendar</li>
+            <li>Reel &amp; short-form video production</li>
+            <li>Hashtag &amp; growth management</li>
+            <li>Performance tracking &amp; reporting</li>
+          </ul>
+          <a href="portfolio.html" class="btn-arrow sticky-services__link">
+            See Work <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="sticky-services__panel" data-index="1">
+        <div class="sticky-services__panel-inner">
+          <span class="t-label sticky-services__num">02</span>
+          <h2 class="sticky-services__title">Branding</h2>
+          <p class="t-body sticky-services__desc">Identity is your first impression — and your last defence against being forgotten. We build brand systems that are distinctive, strategic, and designed to compound in value over time.</p>
+          <ul class="sticky-services__list">
+            <li>Logo design &amp; visual identity</li>
+            <li>Brand strategy &amp; positioning</li>
+            <li>Business card &amp; print collateral</li>
+            <li>Social media brand setup</li>
+          </ul>
+          <a href="portfolio.html" class="btn-arrow sticky-services__link">
+            See Work <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="sticky-services__panel" data-index="2">
+        <div class="sticky-services__panel-inner">
+          <span class="t-label sticky-services__num">03</span>
+          <h2 class="sticky-services__title">Video<br />Production</h2>
+          <p class="t-body sticky-services__desc">High-impact visual storytelling for brands, campaigns, and content. From short-form reels optimized for TikTok and Instagram to full event coverage with professional crew and gear.</p>
+          <ul class="sticky-services__list">
+            <li>Short-form reels (TikTok &amp; Instagram)</li>
+            <li>Full-service video production</li>
+            <li>Event coverage &amp; recap films</li>
+            <li>Motion graphics &amp; typography</li>
+          </ul>
+          <a href="portfolio.html" class="btn-arrow sticky-services__link">
+            See Work <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="sticky-services__panel" data-index="3">
+        <div class="sticky-services__panel-inner">
+          <span class="t-label sticky-services__num">04</span>
+          <h2 class="sticky-services__title">Photo<br />Production</h2>
+          <p class="t-body sticky-services__desc">Conversion-focused photography for restaurants, retailers, products, and events. Every frame crafted to represent your brand with precision — and make people stop scrolling.</p>
+          <ul class="sticky-services__list">
+            <li>Product &amp; lifestyle photography</li>
+            <li>Restaurant &amp; F&amp;B photography</li>
+            <li>Event &amp; occasion coverage</li>
+            <li>Post-production editing included</li>
+          </ul>
+          <a href="portfolio.html" class="btn-arrow sticky-services__link">
+            See Work <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       RECENT WORK — Horizontal scroll cards
+  ══════════════════════════════════════════ -->
+  <section class="section recent-work" id="work">
+    <div class="container">
+      <div class="recent-work__header">
+        <div>
+          <span class="t-label reveal" style="color:var(--color-accent)">Selected Projects</span>
+          <h2 class="recent-work__title reveal reveal-delay-1">Recent Work</h2>
+        </div>
+        <a href="portfolio.html" class="btn btn-outline reveal reveal-delay-2">
+          <span>View All Projects</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Horizontal scroll track -->
+    <div class="work-hscroll" id="workHScroll">
+      <div class="work-hscroll__track" id="workTrack">
+
+        <article class="work-card">
+          <a href="portfolio.html" class="work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80&auto=format&fit=crop"
+              alt="Pacific Rim Restaurant" loading="lazy" />
+            <div class="work-card__overlay"><span>View Project →</span></div>
+          </a>
+          <div class="work-card__meta">
+            <span class="work-card__cat t-label">Social Media</span>
+            <h3 class="work-card__title">Pacific Rim Restaurant</h3>
+            <p class="work-card__sub">Instagram Growth Campaign · 340% Follower Growth</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <a href="portfolio.html" class="work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=700&q=80&auto=format&fit=crop"
+              alt="Hana Skincare" loading="lazy" />
+            <div class="work-card__overlay"><span>View Project →</span></div>
+          </a>
+          <div class="work-card__meta">
+            <span class="work-card__cat t-label">Branding</span>
+            <h3 class="work-card__title">Hana Skincare</h3>
+            <p class="work-card__sub">Complete Brand Identity System</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <a href="portfolio.html" class="work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=700&q=80&auto=format&fit=crop"
+              alt="Vancouver Night Market" loading="lazy" />
+            <div class="work-card__overlay"><span>View Project →</span></div>
+          </a>
+          <div class="work-card__meta">
+            <span class="work-card__cat t-label">Video Production</span>
+            <h3 class="work-card__title">Vancouver Night Market</h3>
+            <p class="work-card__sub">Event Coverage Film · 2024</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <a href="portfolio.html" class="work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&q=80&auto=format&fit=crop"
+              alt="Burnaby Boutique" loading="lazy" />
+            <div class="work-card__overlay"><span>View Project →</span></div>
+          </a>
+          <div class="work-card__meta">
+            <span class="work-card__cat t-label">Photo Production</span>
+            <h3 class="work-card__title">Burnaby Boutique</h3>
+            <p class="work-card__sub">Product &amp; Lifestyle Photography</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <a href="portfolio.html" class="work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=700&q=80&auto=format&fit=crop"
+              alt="Coastal Coffee Co." loading="lazy" />
+            <div class="work-card__overlay"><span>View Project →</span></div>
+          </a>
+          <div class="work-card__meta">
+            <span class="work-card__cat t-label">Branding</span>
+            <h3 class="work-card__title">Coastal Coffee Co.</h3>
+            <p class="work-card__sub">Brand Identity &amp; Packaging</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <a href="portfolio.html" class="work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=700&q=80&auto=format&fit=crop"
+              alt="Sakura Ramen" loading="lazy" />
+            <div class="work-card__overlay"><span>View Project →</span></div>
+          </a>
+          <div class="work-card__meta">
+            <span class="work-card__cat t-label">Social Media</span>
+            <h3 class="work-card__title">Sakura Ramen</h3>
+            <p class="work-card__sub">TikTok Growth Strategy · 2024</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <a href="portfolio.html" class="work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=700&q=80&auto=format&fit=crop"
+              alt="Metro Wellness" loading="lazy" />
+            <div class="work-card__overlay"><span>View Project →</span></div>
+          </a>
+          <div class="work-card__meta">
+            <span class="work-card__cat t-label">Video Production</span>
+            <h3 class="work-card__title">Metro Wellness</h3>
+            <p class="work-card__sub">Brand Film &amp; Reels Package</p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <a href="portfolio.html" class="work-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80&auto=format&fit=crop"
+              alt="Oak + Stone Retail" loading="lazy" />
+            <div class="work-card__overlay"><span>View Project →</span></div>
+          </a>
+          <div class="work-card__meta">
+            <span class="work-card__cat t-label">Photo Production</span>
+            <h3 class="work-card__title">Oak + Stone Retail</h3>
+            <p class="work-card__sub">Product &amp; Lookbook Photography</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Arrow nav + counter -->
+    <div class="container">
+      <div class="work-nav reveal">
+        <div class="work-nav__counter">
+          <span class="work-nav__cur" id="workNavCur">01</span>
+          <span class="work-nav__sep">/</span>
+          <span class="work-nav__total" id="workNavTotal">08</span>
+        </div>
+        <div class="work-nav__btns">
+          <button class="work-nav__btn" id="workNavPrev" aria-label="Previous">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button class="work-nav__btn" id="workNavNext" aria-label="Next">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       PROCESS — 4 steps with animated bars
+  ══════════════════════════════════════════ -->
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section-label-row reveal">
+        <span class="t-label">How We Work</span>
+        <div class="rule"></div>
+      </div>
+      <h2 class="process__headline t-headline reveal">A Process Built<br />For Results</h2>
+      <div class="process__steps">
+        <div class="process__step reveal">
+          <div class="process__step-bar"></div>
+          <div class="process__step-inner">
+            <div class="process__step-header">
+              <span class="process__step-num t-label">01</span>
+              <h3 class="process__step-title">Discovery</h3>
+            </div>
+            <p class="process__step-desc t-body-sm">We start by understanding your business, goals, audience, and current challenges.</p>
+            <ul class="process__step-list">
+              <li>Business &amp; brand review</li>
+              <li>Goal setting</li>
+              <li>Market and audience research</li>
+            </ul>
+          </div>
+        </div>
+        <div class="process__step reveal reveal-delay-1">
+          <div class="process__step-bar"></div>
+          <div class="process__step-inner">
+            <div class="process__step-header">
+              <span class="process__step-num t-label">02</span>
+              <h3 class="process__step-title">Strategy</h3>
+            </div>
+            <p class="process__step-desc t-body-sm">We turn insights into a focused plan with clear priorities, deliverables, and direction.</p>
+            <ul class="process__step-list">
+              <li>Project planning</li>
+              <li>Messaging and positioning</li>
+              <li>Channel and content direction</li>
+            </ul>
+          </div>
+        </div>
+        <div class="process__step reveal reveal-delay-2">
+          <div class="process__step-bar"></div>
+          <div class="process__step-inner">
+            <div class="process__step-header">
+              <span class="process__step-num t-label">03</span>
+              <h3 class="process__step-title">Create</h3>
+            </div>
+            <p class="process__step-desc t-body-sm">We develop the assets and experiences needed to bring the strategy to life.</p>
+            <ul class="process__step-list">
+              <li>Creative development</li>
+              <li>Video and content production</li>
+              <li>Brand design &amp; production</li>
+            </ul>
+          </div>
+        </div>
+        <div class="process__step reveal reveal-delay-3">
+          <div class="process__step-bar"></div>
+          <div class="process__step-inner">
+            <div class="process__step-header">
+              <span class="process__step-num t-label">04</span>
+              <h3 class="process__step-title">Launch &amp; Optimize</h3>
+            </div>
+            <p class="process__step-desc t-body-sm">We launch, measure performance, and refine the work to improve results over time.</p>
+            <ul class="process__step-list">
+              <li>Launch and implementation</li>
+              <li>Performance tracking</li>
+              <li>Ongoing optimization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CTA — Dark band
+  ══════════════════════════════════════════ -->
+  <section class="cta-band section--dark" id="cta">
+    <div class="container cta-band__inner">
+      <div class="cta-band__left reveal">
+        <span class="t-label" style="color:var(--color-accent)">Ready to grow?</span>
+        <h2 class="cta-band__headline">Let's Build<br />Something Great.</h2>
+      </div>
+      <div class="cta-band__actions reveal reveal-delay-1">
+        <a href="contact.html" class="btn btn-outline-white">
+          <span>Book a Call</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__brand-name">MAMMA MIA</div>
+      <div class="footer__top">
+        <div class="footer__col">
+          <p class="footer__col-title">Navigation</p>
+          <nav class="footer__col-links">
+            <a href="index.html" class="footer__col-link">About Us</a>
+            <a href="price-plan.html" class="footer__col-link">Price Plan</a>
+            <a href="portfolio.html" class="footer__col-link">Portfolio</a>
+            <a href="contact.html" class="footer__col-link">Contact Us</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Contact</p>
+          <div class="footer__contact-item">
+            <p class="footer__contact-label">Email</p>
+            <a href="mailto:inquiry.mammamia@gmail.com" class="footer__contact-value footer__col-link">inquiry.mammamia@gmail.com</a>
+          </div>
+          <div class="footer__contact-item">
+            <p class="footer__contact-label">Address</p>
+            <p class="footer__contact-value">6511 Sussex Ave, Burnaby, BC V5H 0K5</p>
+          </div>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Services</p>
+          <nav class="footer__col-links">
+            <a href="price-plan.html#social" class="footer__col-link">Social Media Marketing</a>
+            <a href="price-plan.html#branding" class="footer__col-link">Branding</a>
+            <a href="price-plan.html#video" class="footer__col-link">Video Production</a>
+            <a href="price-plan.html#photo" class="footer__col-link">Photo Production</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 MAMMA MIA Marketing Agency. All rights reserved.</p>
+        <p class="footer__copy">Vancouver, BC, Canada</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
