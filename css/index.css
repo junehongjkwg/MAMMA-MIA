@@ -162,7 +162,7 @@
 }
 @keyframes scrollLine { 0% { top: -100%; } 100% { top: 100%; } }
 
-/* MARQUEE — v13 dynamic clone, pixel-perfect seamless loop */
+/* MARQUEE — v13 final (CSS-only, 8 sets, 8K compatible) */
 .marquee-strip {
   overflow: hidden;
   padding: 20px 0;
@@ -174,12 +174,11 @@
   gap: 52px;
   white-space: nowrap;
   width: max-content;
-  /* JS sets --marquee-distance & --marquee-duration dynamically */
-  animation: marqueeRoll var(--marquee-duration, 40s) linear infinite;
+  min-width: 400vw;
+  animation: marqueeRoll 80s linear infinite;
   will-change: transform;
 }
 .marquee-strip:hover .marquee-track { animation-play-state: paused; }
-.marquee-track .marquee-item,
 .marquee-track span {
   font-family: var(--font-display);
   font-size: 15px;
@@ -192,11 +191,11 @@
   color: var(--color-accent) !important;
   font-size: 9px !important;
   flex-shrink: 0;
-  margin-right: 0;
 }
+/* 8세트 중 1세트(=12.5%) 만큼만 이동 → 완벽 무한 루프 */
 @keyframes marqueeRoll {
   from { transform: translateX(0); }
-  to   { transform: translateX(calc(0px - var(--marquee-distance, 1200px))); }
+  to   { transform: translateX(-12.5%); }
 }
 
 /* INTRO BLOCK */
