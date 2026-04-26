@@ -162,7 +162,7 @@
 }
 @keyframes scrollLine { 0% { top: -100%; } 100% { top: 100%; } }
 
-/* MARQUEE */
+/* MARQUEE — v13 dynamic clone, pixel-perfect seamless loop */
 .marquee-strip {
   overflow: hidden;
   padding: 20px 0;
@@ -171,21 +171,33 @@
 }
 .marquee-track {
   display: flex;
-  gap: 44px;
+  gap: 52px;
   white-space: nowrap;
   width: max-content;
-  animation: marqueeRoll 22s linear infinite;
+  /* JS sets --marquee-distance & --marquee-duration dynamically */
+  animation: marqueeRoll var(--marquee-duration, 40s) linear infinite;
+  will-change: transform;
 }
 .marquee-strip:hover .marquee-track { animation-play-state: paused; }
+.marquee-track .marquee-item,
 .marquee-track span {
   font-family: var(--font-display);
   font-size: 15px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.45);
+  flex-shrink: 0;
 }
-.marquee-dot { color: var(--color-accent) !important; font-size: 9px !important; }
-@keyframes marqueeRoll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee-dot {
+  color: var(--color-accent) !important;
+  font-size: 9px !important;
+  flex-shrink: 0;
+  margin-right: 0;
+}
+@keyframes marqueeRoll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(calc(0px - var(--marquee-distance, 1200px))); }
+}
 
 /* INTRO BLOCK */
 .intro-block { background: var(--color-white); }

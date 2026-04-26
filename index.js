@@ -280,10 +280,86 @@
   });
 
   /* ================================================================
-     6. MARQUEE PAUSE ON HOVER
+     6. MARQUEE — v13 dynamic clone for seamless infinite loop
+     - 1세트(4 items) HTML로 시작
+     - JS가 화면 폭 측정 → 필요한 만큼 자동 복제 (4K, 8K 자동 대응)
+     - 정확한 1세트 픽셀 폭만큼 translateX → 완벽 seamless
+     - 호버 시 일시정지
   ================================================================ */
   const mtrack = document.getElementById('marqueeTrack');
   if (mtrack) {
+
+    // 마퀴 1세트(4개 서비스)를 만드는 함수
+    function buildMarqueeSet() {
+      const services = ['Social Media Marketing', 'Branding', 'Video Production', 'Photo Production'];
+      const frag = document.createDocumentFragment();
+      services.forEach(name => {
+        const item = document.createElement('span');
+        item.className = 'marquee-item';
+        item.textContent = name;
+        frag.appendChild(item);
+        const dot = document.createElement('span');
+        dot.className = 'marquee-dot';
+        dot.textContent = '✦';
+        frag.appendChild(dot);
+      });
+      return frag;
+    }
+
+    // 화면 폭에 맞춰 마퀴 세트를 동적으로 채움
+    function setupMarquee() {
+      // 1) 한 번 리셋: 1세트만 남김
+      mtrack.innerHTML = '';
+      mtrack.appendChild(buildMarqueeSet());
+
+      // 2) 1세트 폭 측정 (gap 포함 — 마지막 dot까지 + gap 1번)
+      const track = mtrack;
+      const trackStyle = getComputedStyle(track);
+      const gap = parseFloat(trackStyle.gap) || 52;
+
+      // 1세트의 실제 폭 = 마지막 자식의 right - 첫 자식의 left + gap
+      const children = track.children;
+      let setWidth = 0;
+      if (children.length > 0) {
+        const firstRect = children[0].getBoundingClientRect();
+        const lastRect  = children[children.length - 1].getBoundingClientRect();
+        setWidth = (lastRect.right - firstRect.left) + gap;
+      }
+
+      // 3) 화면 폭 + 여유 1세트만큼 채워질 때까지 복제
+      const viewportW = window.innerWidth;
+      const targetW = viewportW * 2 + setWidth; // 최소 2배 + 1세트
+      let currentW = setWidth;
+      let cloneCount = 0;
+      while (currentW < targetW && cloneCount < 50) { // 50 안전상한
+        track.appendChild(buildMarqueeSet());
+        currentW += setWidth;
+        cloneCount++;
+      }
+
+      // 4) CSS 변수로 정확한 1세트 거리 + 속도 주입
+      // 속도: 픽셀당 일정 시간 → 화면 크기와 무관하게 동일한 체감 속도
+      const pxPerSecond = 60; // 60px/s 흐름 속도
+      const duration = setWidth / pxPerSecond;
+      track.style.setProperty('--marquee-distance', setWidth + 'px');
+      track.style.setProperty('--marquee-duration', duration + 's');
+
+      // 5) keyframe 재정의 (calc() 음수 적용 위해 직접 스타일로)
+      // CSS의 --marquee-distance를 사용하도록 keyframe 보강
+      // (이미 .marquee-track에 animation 선언됨 — 변수만 바뀌어도 자동 적용)
+    }
+
+    // 초기 셋업
+    setupMarquee();
+
+    // 리사이즈 시 재셋업 (debounce)
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(setupMarquee, 200);
+    });
+
+    // hover pause
     mtrack.addEventListener('mouseenter', () => mtrack.style.animationPlayState = 'paused');
     mtrack.addEventListener('mouseleave', () => mtrack.style.animationPlayState = 'running');
   }
