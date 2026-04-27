@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Branding — MAMMA MIA Marketing Agency</title>
+  <meta name="description" content="MAMMA MIA's branding portfolio — an editorial showcase of identity systems, brand decks, and visual languages built to last." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <link rel="stylesheet" href="css/branding-editorial.css" />
+</head>
+<body>
+
+  <!-- Page Transition Curtain -->
+  <div class="page-curtain" id="pageCurtain"></div>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo">
+      <span style="animation-delay:0.05s">M</span><span style="animation-delay:0.1s">A</span><span style="animation-delay:0.15s">M</span><span style="animation-delay:0.2s">M</span><span style="animation-delay:0.25s">A</span>&nbsp;<span style="animation-delay:0.35s">M</span><span style="animation-delay:0.4s">I</span><span style="animation-delay:0.45s">A</span>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="mainNav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-text" style="color:var(--color-black)">MAMMA MIA</span>
+      </a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">About Us</a>
+        <a href="price-plan.html" class="nav__link">Price Plan</a>
+        <a href="portfolio.html" class="nav__link active">Portfolio</a>
+        <a href="contact.html" class="nav__link">Contact Us</a>
+      </div>
+      <a href="contact.html" class="nav__cta btn btn-outline"><span>Book a Call</span></a>
+      <div class="nav__hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav__mobile-link">About Us</a>
+    <a href="price-plan.html" class="nav__mobile-link">Price Plan</a>
+    <a href="portfolio.html" class="nav__mobile-link">Portfolio</a>
+    <a href="contact.html" class="nav__mobile-link">Contact Us</a>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       EDITORIAL HERO — Magazine Cover
+  ════════════════════════════════════════════ -->
+  <header class="editorial-hero">
+    <div class="container">
+      <div class="editorial-hero__inner">
+        <div class="editorial-hero__left">
+          <h1 class="editorial-hero__title editorial-reveal editorial-reveal-delay-1">
+            <span class="accent">Brands</span><br />
+            that<br />
+            Endure.
+          </h1>
+        </div>
+        <div class="editorial-hero__right editorial-reveal editorial-reveal-delay-2">
+          <p class="editorial-hero__lede">
+            Identity is the first impression — and the last defence against being forgotten. Inside this issue, we open the archives on logo systems, brand decks, and visual languages built for businesses that intend to be around for a while.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════════
+       FILTER BAR (kept for cross-navigation)
+  ════════════════════════════════════════════ -->
+  <div class="filter-bar" id="filterBar">
+    <div class="container">
+      <div class="filter-bar__inner">
+        <a class="filter-btn" href="portfolio.html" data-filter="all">All</a>
+        <a class="filter-btn active" href="portfolio-branding.html" data-filter="branding">Branding</a>
+        <a class="filter-btn" href="portfolio-social.html" data-filter="social">Social Media Marketing</a>
+        <a class="filter-btn" href="portfolio-photo.html" data-filter="photo">Photo Production</a>
+        <a class="filter-btn" href="portfolio-video.html" data-filter="video">Video Production</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       MARQUEE DIVIDER
+  ════════════════════════════════════════════ -->
+  <div class="editorial-divider" aria-hidden="true">
+    <div class="editorial-divider__track">
+      <span>Identity</span><span class="dot">✦</span>
+      <span>Logo Systems</span><span class="dot">✦</span>
+      <span>Brand Decks</span><span class="dot">✦</span>
+      <span>Visual Language</span><span class="dot">✦</span>
+      <span>Print Collateral</span><span class="dot">✦</span>
+      <span>Strategy</span><span class="dot">✦</span>
+      <span>Identity</span><span class="dot">✦</span>
+      <span>Logo Systems</span><span class="dot">✦</span>
+      <span>Brand Decks</span><span class="dot">✦</span>
+      <span>Visual Language</span><span class="dot">✦</span>
+      <span>Print Collateral</span><span class="dot">✦</span>
+      <span>Strategy</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       FEATURE STORY 01 — Branding Anthracite
+  ════════════════════════════════════════════ -->
+  <section class="editorial-feature">
+    <div class="container">
+      <div class="editorial-feature__spread">
+        <div class="editorial-feature__visual editorial-reveal" data-asset-id="branding/01_branding_anthracite.webp">
+          <img src="https://www.genspark.ai/api/files/s/SvH5hcFY" alt="Branding Anthracite" loading="lazy" />
+          <div class="editorial-feature__caption">Plate 01 — Anthracite</div>
+        </div>
+        <div class="editorial-reveal editorial-reveal-delay-1">
+          <div class="editorial-feature__chapter">
+            <span class="editorial-feature__chapter-num">01</span>
+            <span class="editorial-feature__chapter-line"></span>
+            <span>Cover Story</span>
+          </div>
+          <span class="editorial-feature__category">Identity System · Hospitality</span>
+          <h2 class="editorial-feature__title">
+            Branding<br /><em>Anthracite.</em>
+          </h2>
+          <p class="editorial-feature__body">
+            A monolithic identity built for a restaurant that refuses to whisper. We carved a wordmark from raw geometry, paired it with a ceremonial colour story, and let the logotype do the talking on every plate, menu, and storefront window.
+          </p>
+          <dl class="editorial-feature__credits">
+            <dt>Client</dt><dd>Anthracite Hospitality</dd>
+            <dt>Year</dt><dd>2024</dd>
+            <dt>Scope</dt><dd>Logo, Brand Deck, Print</dd>
+            <dt>Type</dt><dd>Restaurant Identity</dd>
+          </dl>
+          <div class="editorial-palette" aria-label="Brand colour palette">
+            <div class="editorial-palette__swatch" style="background:#1a1a1a" data-hex="#1A1A1A"></div>
+            <div class="editorial-palette__swatch" style="background:#3d3d3d" data-hex="#3D3D3D"></div>
+            <div class="editorial-palette__swatch" style="background:#c9a96e" data-hex="#C9A96E"></div>
+            <div class="editorial-palette__swatch" style="background:#f4f1ec" data-hex="#F4F1EC"></div>
+            <div class="editorial-palette__swatch" style="background:#8a3324" data-hex="#8A3324"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       PULL QUOTE 01
+  ════════════════════════════════════════════ -->
+  <section class="editorial-quote">
+    <div class="container">
+      <div class="editorial-quote__mark">"</div>
+      <blockquote class="editorial-quote__text editorial-reveal">
+        A logo is the <em>signature</em> of a promise. Everything else is just decoration.
+      </blockquote>
+      <p class="editorial-quote__attr">— MAMMA MIA Studio Notes</p>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       FEATURE STORY 02 — Kitchen Il Forno (REVERSED)
+  ════════════════════════════════════════════ -->
+  <section class="editorial-feature editorial-feature--alt">
+    <div class="container">
+      <div class="editorial-feature__spread editorial-feature__spread--reverse">
+        <div class="editorial-feature__visual editorial-reveal" data-asset-id="branding/02_kitchen_il_forno.webp">
+          <img src="https://www.genspark.ai/api/files/s/VZpLI7wy" alt="Kitchen Il Forno" loading="lazy" />
+          <div class="editorial-feature__caption">Plate 02 — Il Forno</div>
+        </div>
+        <div class="editorial-reveal editorial-reveal-delay-1">
+          <div class="editorial-feature__chapter">
+            <span class="editorial-feature__chapter-num">02</span>
+            <span class="editorial-feature__chapter-line"></span>
+            <span>Feature</span>
+          </div>
+          <span class="editorial-feature__category">Restaurant Branding · Naples → Vancouver</span>
+          <h2 class="editorial-feature__title">
+            Kitchen<br /><em>Il Forno.</em>
+          </h2>
+          <p class="editorial-feature__body">
+            A brand that smells of woodfire and warm flour. We translated old-world Neapolitan craft into a modern visual system — terracotta tones, a hand-drawn flame mark, and a typographic voice that feels equally at home on a pizza box and a chef's apron.
+          </p>
+          <dl class="editorial-feature__credits">
+            <dt>Client</dt><dd>Kitchen Il Forno</dd>
+            <dt>Year</dt><dd>2024</dd>
+            <dt>Scope</dt><dd>Identity, Packaging, Signage</dd>
+            <dt>Type</dt><dd>Pizzeria Rebrand</dd>
+          </dl>
+          <div class="editorial-palette" aria-label="Brand colour palette">
+            <div class="editorial-palette__swatch" style="background:#a8472d" data-hex="#A8472D"></div>
+            <div class="editorial-palette__swatch" style="background:#d97f4e" data-hex="#D97F4E"></div>
+            <div class="editorial-palette__swatch" style="background:#f0e6d2" data-hex="#F0E6D2"></div>
+            <div class="editorial-palette__swatch" style="background:#3a2418" data-hex="#3A2418"></div>
+            <div class="editorial-palette__swatch" style="background:#e8b04f" data-hex="#E8B04F"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       FEATURE STORY 03 — El Molino (DARK SPREAD)
+  ════════════════════════════════════════════ -->
+  <section class="editorial-feature editorial-feature--dark">
+    <div class="container">
+      <div class="editorial-feature__spread">
+        <div class="editorial-reveal">
+          <div class="editorial-feature__chapter">
+            <span class="editorial-feature__chapter-num">03</span>
+            <span class="editorial-feature__chapter-line"></span>
+            <span>Brand Deck</span>
+          </div>
+          <span class="editorial-feature__category">Full Brand System · Café & Bakery</span>
+          <h2 class="editorial-feature__title">
+            El Molino<br /><em>Brand Deck.</em>
+          </h2>
+          <p class="editorial-feature__body">
+            A 48-page brand bible built for a Latin American café concept ready to scale. Every page — from typography rules to packaging mockups, social media templates to napkin patterns — was crafted to keep the brand consistent whether it lives on a phone screen or a flour-dusted wall.
+          </p>
+          <dl class="editorial-feature__credits">
+            <dt>Client</dt><dd>El Molino Café</dd>
+            <dt>Year</dt><dd>2024</dd>
+            <dt>Scope</dt><dd>Full Brand Deck, Guidelines</dd>
+            <dt>Format</dt><dd>48 pages · Print + Digital</dd>
+          </dl>
+          <div class="editorial-palette" aria-label="Brand colour palette">
+            <div class="editorial-palette__swatch" style="background:#5c4023" data-hex="#5C4023"></div>
+            <div class="editorial-palette__swatch" style="background:#a87547" data-hex="#A87547"></div>
+            <div class="editorial-palette__swatch" style="background:#d4b894" data-hex="#D4B894"></div>
+            <div class="editorial-palette__swatch" style="background:#2d1f12" data-hex="#2D1F12"></div>
+            <div class="editorial-palette__swatch" style="background:#7a8c4e" data-hex="#7A8C4E"></div>
+          </div>
+        </div>
+        <div class="editorial-feature__visual editorial-reveal editorial-reveal-delay-1" data-asset-id="branding/03_el_molino_brand_deck.jpg">
+          <img src="https://www.genspark.ai/api/files/s/6b2BcHLB" alt="El Molino Brand Deck" loading="lazy" />
+          <div class="editorial-feature__caption">Plate 03 — El Molino Deck</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       PULL QUOTE 02
+  ════════════════════════════════════════════ -->
+  <section class="editorial-quote editorial-quote--dark">
+    <div class="container">
+      <div class="editorial-quote__mark">"</div>
+      <blockquote class="editorial-quote__text editorial-reveal">
+        Good branding doesn't <em>shout</em> — it compounds quietly until you can't imagine the world without it.
+      </blockquote>
+      <p class="editorial-quote__attr">— Studio Manifesto, MAMMA MIA</p>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       MAGAZINE GALLERY — Asymmetric Grid
+  ════════════════════════════════════════════ -->
+  <section class="editorial-gallery">
+    <div class="container">
+      <header class="editorial-gallery__header editorial-reveal">
+        <div>
+          <span class="editorial-gallery__eyebrow">The Archive · Pages 04 – 09</span>
+          <h2 class="editorial-gallery__title">More from<br />the Studio Floor.</h2>
+        </div>
+        <div class="editorial-gallery__count">
+          <strong>06</strong> further plates
+        </div>
+      </header>
+
+      <div class="editorial-grid">
+        <!-- 04 La Foret IG (Large hero) -->
+        <article class="editorial-card editorial-card--lg editorial-reveal" data-asset-id="branding/04_la_foret_ig.jpg">
+          <img class="editorial-card__img" src="https://www.genspark.ai/api/files/s/Nuz0hH6o" alt="La Foret IG" loading="lazy" />
+          <div class="editorial-card__plate">
+            <div class="editorial-card__plate-info">
+              <span class="editorial-card__num">Plate 04 · Social Identity</span>
+              <h3 class="editorial-card__title">La Forêt — Instagram System</h3>
+            </div>
+            <span class="editorial-card__year">'24</span>
+          </div>
+        </article>
+
+        <!-- 05 New Menu Promo 1 -->
+        <article class="editorial-card editorial-card--md editorial-reveal editorial-reveal-delay-1" data-asset-id="branding/05_new_menu_promo_1.jpg">
+          <img class="editorial-card__img" src="https://www.genspark.ai/api/files/s/RaXI7gQ3" alt="New Menu Promo 1" loading="lazy" />
+          <div class="editorial-card__plate">
+            <div class="editorial-card__plate-info">
+              <span class="editorial-card__num">Plate 05 · Menu Campaign</span>
+              <h3 class="editorial-card__title">New Menu Promo · Vol. I</h3>
+            </div>
+            <span class="editorial-card__year">'24</span>
+          </div>
+        </article>
+
+        <!-- 06 New Menu Promo 2 -->
+        <article class="editorial-card editorial-card--sm editorial-reveal editorial-reveal-delay-2" data-asset-id="branding/06_new_menu_promo_2.jpg">
+          <img class="editorial-card__img" src="https://www.genspark.ai/api/files/s/V4DeLbJm" alt="New Menu Promo 2" loading="lazy" />
+          <div class="editorial-card__plate">
+            <div class="editorial-card__plate-info">
+              <span class="editorial-card__num">Plate 06 · Menu Campaign</span>
+              <h3 class="editorial-card__title">New Menu Promo · Vol. II</h3>
+            </div>
+            <span class="editorial-card__year">'24</span>
+          </div>
+        </article>
+
+        <!-- 07 New Menu Promo 3 (Portrait) -->
+        <article class="editorial-card editorial-card--portrait editorial-reveal" data-asset-id="branding/07_new_menu_promo_3.jpg">
+          <img class="editorial-card__img" src="https://www.genspark.ai/api/files/s/Rg0WNRcA" alt="New Menu Promo 3" loading="lazy" />
+          <div class="editorial-card__plate">
+            <div class="editorial-card__plate-info">
+              <span class="editorial-card__num">Plate 07 · Menu Campaign</span>
+              <h3 class="editorial-card__title">New Menu Promo · Vol. III</h3>
+            </div>
+            <span class="editorial-card__year">'24</span>
+          </div>
+        </article>
+
+        <!-- 08 Seasonal Promo (Wide) -->
+        <article class="editorial-card editorial-card--wide editorial-reveal editorial-reveal-delay-1" data-asset-id="branding/08_seasonal_promo.webp">
+          <img class="editorial-card__img" src="https://www.genspark.ai/api/files/s/sMcRCFhP" alt="Seasonal Promo" loading="lazy" />
+          <div class="editorial-card__plate">
+            <div class="editorial-card__plate-info">
+              <span class="editorial-card__num">Plate 08 · Seasonal Campaign</span>
+              <h3 class="editorial-card__title">Seasonal Promo Suite</h3>
+            </div>
+            <span class="editorial-card__year">'25</span>
+          </div>
+        </article>
+
+        <!-- 09 Uber Eats Promo (Banner — full width) -->
+        <article class="editorial-card editorial-card--banner editorial-reveal" data-asset-id="branding/09_uber_eats_promo.jpg">
+          <img class="editorial-card__img" src="https://www.genspark.ai/api/files/s/NOMIoabp" alt="Uber Eats Promo" loading="lazy" />
+          <div class="editorial-card__plate">
+            <div class="editorial-card__plate-info">
+              <span class="editorial-card__num">Plate 09 · Delivery Partnership</span>
+              <h3 class="editorial-card__title">Uber Eats — Promo Series</h3>
+            </div>
+            <span class="editorial-card__year">'25</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       MANIFESTO — How We Build Brands
+  ════════════════════════════════════════════ -->
+  <section class="editorial-manifesto">
+    <div class="container">
+      <div class="editorial-manifesto__inner">
+        <div class="editorial-manifesto__sticky editorial-reveal">
+          <span class="editorial-manifesto__eyebrow">The Method · Editor's Note</span>
+          <h2 class="editorial-manifesto__title">
+            How we<br />
+            <em>build</em><br />
+            brands.
+          </h2>
+        </div>
+        <div class="editorial-manifesto__steps">
+          <div class="editorial-manifesto__step editorial-reveal">
+            <div class="editorial-manifesto__step-num">01</div>
+            <div>
+              <h3 class="editorial-manifesto__step-title">Listen, then question.</h3>
+              <p class="editorial-manifesto__step-desc">Every brand we touch starts with the same posture — we sit down, we listen, then we politely question everything the founder thinks they know about their market. The best identities are built from uncomfortable truths.</p>
+            </div>
+          </div>
+          <div class="editorial-manifesto__step editorial-reveal">
+            <div class="editorial-manifesto__step-num">02</div>
+            <div>
+              <h3 class="editorial-manifesto__step-title">Position before pixel.</h3>
+              <p class="editorial-manifesto__step-desc">Strategy lives upstream of design. We map the competitive landscape, locate the gap nobody else has the courage to fill, and only then do we let the typography decisions begin.</p>
+            </div>
+          </div>
+          <div class="editorial-manifesto__step editorial-reveal">
+            <div class="editorial-manifesto__step-num">03</div>
+            <div>
+              <h3 class="editorial-manifesto__step-title">Design the system, not the asset.</h3>
+              <p class="editorial-manifesto__step-desc">A logo is one frame. A brand is the entire film. We design colour, type, voice, and motion as a single system — so every menu, post, and napkin recognises itself in the family.</p>
+            </div>
+          </div>
+          <div class="editorial-manifesto__step editorial-reveal">
+            <div class="editorial-manifesto__step-num">04</div>
+            <div>
+              <h3 class="editorial-manifesto__step-title">Hand it over with care.</h3>
+              <p class="editorial-manifesto__step-desc">A brand deck without context is a museum piece. We deliver guidelines, working files, and live training — so your team can carry the identity confidently into rooms we'll never enter.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       CTA BAND
+  ════════════════════════════════════════════ -->
+  <section class="cta-band section--dark" style="padding:clamp(80px,10vw,120px) 0; border-top:1px solid rgba(255,255,255,0.06)">
+    <div class="container">
+      <div class="cta-band__inner reveal">
+        <span class="t-label" style="color:rgba(255,255,255,0.4)">Let's Create Together</span>
+        <h2 class="cta-band__headline t-headline">Ready to Start<br />Your Project?</h2>
+        <div class="cta-band__actions">
+          <a href="contact.html" class="btn btn-outline-white">
+            <span>Book a Call</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__brand-name">MAMMA MIA</div>
+      <div class="footer__top">
+        <div class="footer__col">
+          <p class="footer__col-title">Navigation</p>
+          <nav class="footer__col-links">
+            <a href="index.html" class="footer__col-link">About Us</a>
+            <a href="price-plan.html" class="footer__col-link">Price Plan</a>
+            <a href="portfolio.html" class="footer__col-link">Portfolio</a>
+            <a href="contact.html" class="footer__col-link">Contact Us</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Contact</p>
+          <div class="footer__contact-item">
+            <p class="footer__contact-label">Email</p>
+            <a href="mailto:inquiry.mammamia@gmail.com" class="footer__contact-value footer__col-link">inquiry.mammamia@gmail.com</a>
+          </div>
+          <div class="footer__contact-item">
+            <p class="footer__contact-label">Address</p>
+            <p class="footer__contact-value">6511 Sussex Ave, Burnaby, BC V5H 0K5</p>
+          </div>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Services</p>
+          <nav class="footer__col-links">
+            <a href="portfolio-branding.html" class="footer__col-link">Branding</a>
+            <a href="portfolio-social.html" class="footer__col-link">Social Media Marketing</a>
+            <a href="portfolio-photo.html" class="footer__col-link">Photo Production</a>
+            <a href="portfolio-video.html" class="footer__col-link">Video Production</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 MAMMA MIA Marketing Agency. All rights reserved.</p>
+        <p class="footer__copy">Vancouver, BC, Canada</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script>
+    /* ============================================
+       Editorial Reveal — IntersectionObserver
+       매거진 페이지 스크롤 인터랙션
+    ============================================ */
+    (function () {
+      const items = document.querySelectorAll('.editorial-reveal');
+      if (!('IntersectionObserver' in window) || !items.length) {
+        items.forEach(el => el.classList.add('is-visible'));
+        return;
+      }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+      items.forEach(el => io.observe(el));
+    })();
+
+
+  </script>
+</body>
+</html>

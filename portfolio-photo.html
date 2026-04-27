@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Production — MAMMA MIA Marketing Agency</title>
+  <meta name="description" content="MAMMA MIA's photo production portfolio — food, product, and portrait photography produced in-studio and on-location across British Columbia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <link rel="stylesheet" href="css/photo-masonry.css" />
+</head>
+<body>
+
+  <!-- Page Transition Curtain -->
+  <div class="page-curtain" id="pageCurtain"></div>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo">
+      <span style="animation-delay:0.05s">M</span><span style="animation-delay:0.1s">A</span><span style="animation-delay:0.15s">M</span><span style="animation-delay:0.2s">M</span><span style="animation-delay:0.25s">A</span>&nbsp;<span style="animation-delay:0.35s">M</span><span style="animation-delay:0.4s">I</span><span style="animation-delay:0.45s">A</span>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="mainNav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-text" style="color:var(--color-black)">MAMMA MIA</span>
+      </a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">About Us</a>
+        <a href="price-plan.html" class="nav__link">Price Plan</a>
+        <a href="portfolio.html" class="nav__link active">Portfolio</a>
+        <a href="contact.html" class="nav__link">Contact Us</a>
+      </div>
+      <a href="contact.html" class="nav__cta btn btn-outline"><span>Book a Call</span></a>
+      <div class="nav__hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav__mobile-link">About Us</a>
+    <a href="price-plan.html" class="nav__mobile-link">Price Plan</a>
+    <a href="portfolio.html" class="nav__mobile-link">Portfolio</a>
+    <a href="contact.html" class="nav__mobile-link">Contact Us</a>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════ -->
+  <header class="photo-hero">
+    <div class="container">
+      <div class="photo-hero__inner">
+        <span class="photo-hero__label reveal">Photo Production</span>
+        <h1 class="photo-hero__title reveal">
+          Photography<br />that <span class="accent">Sells.</span>
+        </h1>
+        <p class="photo-hero__sub reveal reveal-delay-1">
+          Food, product, and portrait photography — produced in-studio and on-location across British Columbia. Every frame composed with intent, every shot built to convert.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════════
+       PORTFOLIO TOP-LEVEL FILTER (page navigation)
+  ════════════════════════════════════════════ -->
+  <div class="filter-bar filter-bar--photo" id="filterBar">
+    <div class="container">
+      <div class="filter-bar__inner">
+        <a class="filter-btn" href="portfolio.html" data-filter="all">All</a>
+        <a class="filter-btn" href="portfolio-branding.html" data-filter="branding">Branding</a>
+        <a class="filter-btn" href="portfolio-social.html" data-filter="social">Social Media Marketing</a>
+        <a class="filter-btn active" href="portfolio-photo.html" data-filter="photo">Photo Production</a>
+        <a class="filter-btn" href="portfolio-video.html" data-filter="video">Video Production</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       MASONRY GRID — 40 frames, mixed categories
+  ════════════════════════════════════════════ -->
+  <main class="photo-masonry-section">
+    <div class="container--wide">
+      <div class="masonry" id="photoMasonry">
+
+        <!-- 01 -->
+        <a class="masonry__item" data-cat="portrait" href="#" aria-label="Hani 1">
+          <span class="masonry__index">01 · PORTRAIT</span>
+          <img src="https://www.genspark.ai/api/files/s/oVpwLJJc" alt="Hani 1" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Portrait — Skincare</span><h3 class="masonry__title">Hani 1</h3></div>
+        </a>
+
+        <!-- 02 -->
+        <a class="masonry__item" data-cat="food" href="#" aria-label="Food Burger">
+          <span class="masonry__index">02 · FOOD</span>
+          <img src="https://www.genspark.ai/api/files/s/neFGiniX" alt="Food Burger" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Food</span><h3 class="masonry__title">Food Burger</h3></div>
+        </a>
+
+        <!-- 03 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Apparel 1">
+          <span class="masonry__index">03 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/I3QbnlId" alt="Apparel 1" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Apparel 1</h3></div>
+        </a>
+
+        <!-- 04 -->
+        <a class="masonry__item" data-cat="food" href="#" aria-label="Food Cocktail">
+          <span class="masonry__index">04 · FOOD</span>
+          <img src="https://www.genspark.ai/api/files/s/0d7cYmcz" alt="Food Cocktail" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Food</span><h3 class="masonry__title">Food Cocktail</h3></div>
+        </a>
+
+        <!-- 05 -->
+        <a class="masonry__item" data-cat="portrait" href="#" aria-label="Heather Sushi 1">
+          <span class="masonry__index">05 · PORTRAIT</span>
+          <img src="https://www.genspark.ai/api/files/s/kvRxwxYt" alt="Heather Sushi 1" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Portrait — Sushi</span><h3 class="masonry__title">Heather Sushi 1</h3></div>
+        </a>
+
+        <!-- 06 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Studio Concept 1">
+          <span class="masonry__index">06 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/pNXHXWCf" alt="Studio Concept 1" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Studio Concept 1</h3></div>
+        </a>
+
+        <!-- 07 -->
+        <a class="masonry__item" data-cat="food" href="#" aria-label="Food Pasta">
+          <span class="masonry__index">07 · FOOD</span>
+          <img src="https://www.genspark.ai/api/files/s/ezbqtqhD" alt="Food Pasta" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Food</span><h3 class="masonry__title">Food Pasta</h3></div>
+        </a>
+
+        <!-- 08 -->
+        <a class="masonry__item" data-cat="portrait" href="#" aria-label="Heather 1">
+          <span class="masonry__index">08 · PORTRAIT</span>
+          <img src="https://www.genspark.ai/api/files/s/hkN9y5ke" alt="Heather 1" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Portrait — Skincare</span><h3 class="masonry__title">Heather 1</h3></div>
+        </a>
+
+        <!-- 09 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Apparel 2">
+          <span class="masonry__index">09 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/dRHC7EvK" alt="Apparel 2" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Apparel 2</h3></div>
+        </a>
+
+        <!-- 10 -->
+        <a class="masonry__item" data-cat="food" href="#" aria-label="Food Pizza">
+          <span class="masonry__index">10 · FOOD</span>
+          <img src="https://www.genspark.ai/api/files/s/bummHgw2" alt="Food Pizza" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Food</span><h3 class="masonry__title">Food Pizza</h3></div>
+        </a>
+
+        <!-- 11 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Engagement Ring">
+          <span class="masonry__index">11 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/wOJs8rDZ" alt="Engagement Ring" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Engagement Ring</h3></div>
+        </a>
+
+        <!-- 12 -->
+        <a class="masonry__item" data-cat="portrait" href="#" aria-label="Hani 2">
+          <span class="masonry__index">12 · PORTRAIT</span>
+          <img src="https://www.genspark.ai/api/files/s/ruebyWVP" alt="Hani 2" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Portrait — Skincare</span><h3 class="masonry__title">Hani 2</h3></div>
+        </a>
+
+        <!-- 13 -->
+        <a class="masonry__item" data-cat="food" href="#" aria-label="Food Chicken Wing">
+          <span class="masonry__index">13 · FOOD</span>
+          <img src="https://www.genspark.ai/api/files/s/CYi4CdCy" alt="Food Chicken Wing" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Food</span><h3 class="masonry__title">Food Chicken Wing</h3></div>
+        </a>
+
+        <!-- 14 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Apparel 5">
+          <span class="masonry__index">14 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/hpqQ5iyt" alt="Apparel 5" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Apparel 5</h3></div>
+        </a>
+
+        <!-- 15 -->
+        <a class="masonry__item" data-cat="portrait" href="#" aria-label="Jeremy And Hani Sushi">
+          <span class="masonry__index">15 · PORTRAIT</span>
+          <img src="https://www.genspark.ai/api/files/s/sX6vR2We" alt="Jeremy And Hani Sushi" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Portrait — Sushi</span><h3 class="masonry__title">Jeremy &amp; Hani Sushi</h3></div>
+        </a>
+
+        <!-- 16 -->
+        <a class="masonry__item" data-cat="food" href="#" aria-label="Food Cocktails">
+          <span class="masonry__index">16 · FOOD</span>
+          <img src="https://www.genspark.ai/api/files/s/PN2kiG3P" alt="Food Cocktails" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Food</span><h3 class="masonry__title">Food Cocktails</h3></div>
+        </a>
+
+        <!-- 17 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Retail Studio 1">
+          <span class="masonry__index">17 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/zvGMriLE" alt="Retail Studio 1" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Retail Studio 1</h3></div>
+        </a>
+
+        <!-- 18 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Arm Sleeve">
+          <span class="masonry__index">18 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/5MBkdwgN" alt="Arm Sleeve" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Arm Sleeve</h3></div>
+        </a>
+
+        <!-- 19 -->
+        <a class="masonry__item" data-cat="food" href="#" aria-label="Food Korean Spice Noodle">
+          <span class="masonry__index">19 · FOOD</span>
+          <img src="https://www.genspark.ai/api/files/s/mTF2wwlc" alt="Food Korean Spice Noodle" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Food</span><h3 class="masonry__title">Food Korean Spice Noodle</h3></div>
+        </a>
+
+        <!-- 20 -->
+        <a class="masonry__item" data-cat="portrait" href="#" aria-label="Heather 2">
+          <span class="masonry__index">20 · PORTRAIT</span>
+          <img src="https://www.genspark.ai/api/files/s/deQhz5hf" alt="Heather 2" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Portrait — Skincare</span><h3 class="masonry__title">Heather 2</h3></div>
+        </a>
+
+        <!-- 21 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Apparel 3">
+          <span class="masonry__index">21 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/mPaEUCPu" alt="Apparel 3" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Apparel 3</h3></div>
+        </a>
+
+        <!-- 22 -->
+        <a class="masonry__item" data-cat="food" href="#" aria-label="Food Martini Cocktail">
+          <span class="masonry__index">22 · FOOD</span>
+          <img src="https://www.genspark.ai/api/files/s/Z3DGtmAR" alt="Food Martini Cocktail" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Food</span><h3 class="masonry__title">Food Martini Cocktail</h3></div>
+        </a>
+
+        <!-- 23 -->
+        <a class="masonry__item" data-cat="portrait" href="#" aria-label="Hani 3">
+          <span class="masonry__index">23 · PORTRAIT</span>
+          <img src="https://www.genspark.ai/api/files/s/gLjRd4ei" alt="Hani 3" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Portrait — Skincare</span><h3 class="masonry__title">Hani 3</h3></div>
+        </a>
+
+        <!-- 24 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Studio Concept 2">
+          <span class="masonry__index">24 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/n2QaqH3K" alt="Studio Concept 2" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Studio Concept 2</h3></div>
+        </a>
+
+        <!-- 25 -->
+        <a class="masonry__item" data-cat="food" href="#" aria-label="Food New Dessert">
+          <span class="masonry__index">25 · FOOD</span>
+          <img src="https://www.genspark.ai/api/files/s/B5K3kAt2" alt="Food New Dessert" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Food</span><h3 class="masonry__title">Food New Dessert</h3></div>
+        </a>
+
+        <!-- 26 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Apparel 4">
+          <span class="masonry__index">26 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/BxYgSeLf" alt="Apparel 4" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Apparel 4</h3></div>
+        </a>
+
+        <!-- 27 -->
+        <a class="masonry__item" data-cat="portrait" href="#" aria-label="Heather Sushi 2">
+          <span class="masonry__index">27 · PORTRAIT</span>
+          <img src="https://www.genspark.ai/api/files/s/WumrLwpE" alt="Heather Sushi 2" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Portrait — Sushi</span><h3 class="masonry__title">Heather Sushi 2</h3></div>
+        </a>
+
+        <!-- 28 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Pantyhose">
+          <span class="masonry__index">28 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/t0Awn76i" alt="Pantyhose" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Pantyhose</h3></div>
+        </a>
+
+        <!-- 29 -->
+        <a class="masonry__item" data-cat="food" href="#" aria-label="Food St Patrick">
+          <span class="masonry__index">29 · FOOD</span>
+          <img src="https://www.genspark.ai/api/files/s/Qb8F1hUK" alt="Food St Patrick" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Food</span><h3 class="masonry__title">Food St Patrick</h3></div>
+        </a>
+
+        <!-- 30 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Retail Studio 2">
+          <span class="masonry__index">30 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/mUwP9eA6" alt="Retail Studio 2" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Retail Studio 2</h3></div>
+        </a>
+
+        <!-- 31 -->
+        <a class="masonry__item" data-cat="portrait" href="#" aria-label="Heather 3">
+          <span class="masonry__index">31 · PORTRAIT</span>
+          <img src="https://www.genspark.ai/api/files/s/6ssJgL3v" alt="Heather 3" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Portrait — Skincare</span><h3 class="masonry__title">Heather 3</h3></div>
+        </a>
+
+        <!-- 32 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Thermo 1">
+          <span class="masonry__index">32 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/gZoEIdT9" alt="Thermo 1" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Thermo 1</h3></div>
+        </a>
+
+        <!-- 33 -->
+        <a class="masonry__item" data-cat="food" href="#" aria-label="Food Tacos">
+          <span class="masonry__index">33 · FOOD</span>
+          <img src="https://www.genspark.ai/api/files/s/X0hwByka" alt="Food Tacos" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Food</span><h3 class="masonry__title">Food Tacos</h3></div>
+        </a>
+
+        <!-- 34 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Apparel 6">
+          <span class="masonry__index">34 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/059o0Sa1" alt="Apparel 6" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Apparel 6</h3></div>
+        </a>
+
+        <!-- 35 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Studio Concept 3">
+          <span class="masonry__index">35 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/ebTGy8kq" alt="Studio Concept 3" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Studio Concept 3</h3></div>
+        </a>
+
+        <!-- 36 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Apparel 7">
+          <span class="masonry__index">36 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/K9BTGp65" alt="Apparel 7" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Apparel 7</h3></div>
+        </a>
+
+        <!-- 37 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Retail Studio 3">
+          <span class="masonry__index">37 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/1LbUMaQZ" alt="Retail Studio 3" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Retail Studio 3</h3></div>
+        </a>
+
+        <!-- 38 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Thermo 2">
+          <span class="masonry__index">38 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/Azx2mBDR" alt="Thermo 2" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Thermo 2</h3></div>
+        </a>
+
+        <!-- 39 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Apparel 8">
+          <span class="masonry__index">39 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/WQdjq5Hy" alt="Apparel 8" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Apparel 8</h3></div>
+        </a>
+
+        <!-- 40 -->
+        <a class="masonry__item" data-cat="product" href="#" aria-label="Thermo 3">
+          <span class="masonry__index">40 · PRODUCT</span>
+          <img src="https://www.genspark.ai/api/files/s/8u2WGMoa" alt="Thermo 3" loading="lazy" />
+          <div class="masonry__overlay"><span class="masonry__cat">Product</span><h3 class="masonry__title">Thermo 3</h3></div>
+        </a>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ════════════════════════════════════════════
+       CTA BAND
+  ════════════════════════════════════════════ -->
+  <section class="cta-band section--dark" style="padding:clamp(80px,10vw,120px) 0; border-top:1px solid rgba(255,255,255,0.06)">
+    <div class="container">
+      <div class="cta-band__inner reveal">
+        <span class="t-label" style="color:rgba(255,255,255,0.4)">Let's Create Together</span>
+        <h2 class="cta-band__headline t-headline">Ready to Start<br />Your Project?</h2>
+        <div class="cta-band__actions">
+          <a href="contact.html" class="btn btn-outline-white">
+            <span>Book a Call</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__brand-name">MAMMA MIA</div>
+      <div class="footer__top">
+        <div class="footer__col">
+          <p class="footer__col-title">Navigation</p>
+          <nav class="footer__col-links">
+            <a href="index.html" class="footer__col-link">About Us</a>
+            <a href="price-plan.html" class="footer__col-link">Price Plan</a>
+            <a href="portfolio.html" class="footer__col-link">Portfolio</a>
+            <a href="contact.html" class="footer__col-link">Contact Us</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Contact</p>
+          <div class="footer__contact-item">
+            <p class="footer__contact-label">Email</p>
+            <a href="mailto:inquiry.mammamia@gmail.com" class="footer__contact-value footer__col-link">inquiry.mammamia@gmail.com</a>
+          </div>
+          <div class="footer__contact-item">
+            <p class="footer__contact-label">Address</p>
+            <p class="footer__contact-value">6511 Sussex Ave, Burnaby, BC V5H 0K5</p>
+          </div>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Services</p>
+          <nav class="footer__col-links">
+            <a href="portfolio-branding.html" class="footer__col-link">Branding</a>
+            <a href="portfolio-social.html" class="footer__col-link">Social Media Marketing</a>
+            <a href="portfolio-photo.html" class="footer__col-link">Photo Production</a>
+            <a href="portfolio-video.html" class="footer__col-link">Video Production</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 MAMMA MIA Marketing Agency. All rights reserved.</p>
+        <p class="footer__copy">Vancouver, BC, Canada</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script>
+    // Reveal animation on scroll for masonry items
+    (function () {
+      const items = document.querySelectorAll('.masonry__item');
+      if (!('IntersectionObserver' in window)) {
+        items.forEach(el => el.classList.add('is-visible'));
+        return;
+      }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            // staggered reveal
+            const idx = Array.prototype.indexOf.call(items, entry.target);
+            const delay = (idx % 8) * 50;
+            setTimeout(() => entry.target.classList.add('is-visible'), delay);
+            io.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.05 });
+      items.forEach(el => io.observe(el));
+    })();
+  </script>
+</body>
+</html>

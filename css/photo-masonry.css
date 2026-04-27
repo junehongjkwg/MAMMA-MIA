@@ -1,0 +1,193 @@
+/* ============================================================
+   PHOTO PRODUCTION — RESPONSIVE MASONRY LAYOUT
+   화면을 빈 공간 없이 꽉 채우는 반응형 메이슨리
+   ============================================================ */
+
+/* HERO ─────────────────────────────────────────────── */
+.photo-hero {
+  padding: calc(var(--nav-height, 72px) + 80px) 0 60px;
+  background: var(--color-white, #fff);
+}
+.photo-hero__inner {
+  max-width: 1100px;
+}
+.photo-hero__label {
+  display: inline-block;
+  font-family: var(--font-mono, 'Inter', sans-serif);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent, #1742ff);
+  margin-bottom: 16px;
+}
+.photo-hero__title {
+  font-family: var(--font-display, 'Bebas Neue', sans-serif);
+  font-size: clamp(56px, 9vw, 140px);
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  color: var(--color-black, #0a0a0a);
+  margin: 0 0 24px;
+}
+.photo-hero__title .accent {
+  color: var(--color-accent, #1742ff);
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+.photo-hero__sub {
+  max-width: 640px;
+  font-size: clamp(15px, 1.2vw, 17px);
+  line-height: 1.6;
+  color: rgba(10, 10, 10, 0.65);
+  margin-bottom: 28px;
+}
+.photo-hero__meta {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  font-family: var(--font-mono, 'Inter', sans-serif);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(10, 10, 10, 0.55);
+}
+.photo-hero__meta strong {
+  color: var(--color-black, #0a0a0a);
+  font-weight: 600;
+  margin-right: 6px;
+  font-family: var(--font-display, 'Bebas Neue', sans-serif);
+  font-size: 22px;
+  letter-spacing: 0;
+}
+
+/* MASONRY ──────────────────────────────────────────── */
+.photo-masonry-section {
+  padding: 0 0 80px;
+  background: var(--color-white, #fff);
+}
+.photo-masonry-section .container--wide {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 3vw, 32px);
+}
+
+.masonry {
+  column-count: 4;
+  column-gap: 12px;
+  margin: 0;
+}
+@media (max-width: 1280px) {
+  .masonry { column-count: 3; }
+}
+@media (max-width: 768px) {
+  .masonry { column-count: 2; column-gap: 8px; }
+}
+@media (max-width: 460px) {
+  .masonry { column-count: 1; }
+}
+
+.masonry__item {
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  margin: 0 0 12px;
+  position: relative;
+  overflow: hidden;
+  background: #f4f4f4;
+  cursor: pointer;
+  display: block;
+}
+@media (max-width: 768px) {
+  .masonry__item { margin-bottom: 8px; }
+}
+
+.masonry__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1),
+              filter 0.5s ease;
+  will-change: transform;
+}
+.masonry__item:hover img {
+  transform: scale(1.04);
+  filter: brightness(0.92);
+}
+
+/* Hover overlay with title + tag */
+.masonry__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 18px 18px 16px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.78) 0%,
+    rgba(0, 0, 0, 0.35) 45%,
+    rgba(0, 0, 0, 0) 75%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  color: #fff;
+}
+.masonry__item:hover .masonry__overlay {
+  opacity: 1;
+}
+.masonry__cat {
+  font-family: var(--font-mono, 'Inter', sans-serif);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 6px;
+  display: inline-block;
+}
+.masonry__title {
+  font-family: var(--font-display, 'Bebas Neue', sans-serif);
+  font-size: clamp(18px, 1.4vw, 24px);
+  letter-spacing: 0.01em;
+  margin: 0;
+  line-height: 1.1;
+}
+
+/* Index number (small frame counter, top-left, monogram style) */
+.masonry__index {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-family: var(--font-mono, 'Inter', sans-serif);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: rgba(255, 255, 255, 0.0);
+  background: rgba(0, 0, 0, 0.55);
+  padding: 4px 8px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.4s ease 0.05s;
+  pointer-events: none;
+  z-index: 2;
+}
+.masonry__item:hover .masonry__index {
+  opacity: 1;
+  color: #fff;
+}
+
+/* Reveal animation */
+.masonry__item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.masonry__item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hide existing filter bar inner spacing tweaks */
+.filter-bar.filter-bar--photo .filter-bar__inner {
+  justify-content: flex-start;
+}

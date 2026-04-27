@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Production — MAMMA MIA Marketing Agency</title>
+  <meta name="description" content="MAMMA MIA's video production reel — brand films, fashion films, documentary, and event coverage produced end-to-end." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <link rel="stylesheet" href="css/video-cinema.css" />
+</head>
+<body class="video-page">
+
+  <!-- Page Transition Curtain -->
+  <div class="page-curtain" id="pageCurtain"></div>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo">
+      <span style="animation-delay:0.05s">M</span><span style="animation-delay:0.1s">A</span><span style="animation-delay:0.15s">M</span><span style="animation-delay:0.2s">M</span><span style="animation-delay:0.25s">A</span>&nbsp;<span style="animation-delay:0.35s">M</span><span style="animation-delay:0.4s">I</span><span style="animation-delay:0.45s">A</span>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="mainNav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-text" style="color:var(--color-black)">MAMMA MIA</span>
+      </a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">About Us</a>
+        <a href="price-plan.html" class="nav__link">Price Plan</a>
+        <a href="portfolio.html" class="nav__link active">Portfolio</a>
+        <a href="contact.html" class="nav__link">Contact Us</a>
+      </div>
+      <a href="contact.html" class="nav__cta btn btn-outline"><span>Book a Call</span></a>
+      <div class="nav__hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav__mobile-link">About Us</a>
+    <a href="price-plan.html" class="nav__mobile-link">Price Plan</a>
+    <a href="portfolio.html" class="nav__mobile-link">Portfolio</a>
+    <a href="contact.html" class="nav__mobile-link">Contact Us</a>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════ -->
+  <header class="video-hero">
+    <div class="container">
+      <div class="video-hero__inner">
+        <span class="video-hero__label reveal">Video Production</span>
+        <h1 class="video-hero__title reveal">
+          Films That<br /><span class="accent">Move.</span>
+        </h1>
+        <p class="video-hero__sub reveal reveal-delay-1">
+          Brand films, fashion films, documentary, and event coverage — produced end-to-end. From concept to colour, every frame crafted to move audiences.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════════
+       PORTFOLIO TOP-LEVEL FILTER
+  ════════════════════════════════════════════ -->
+  <div class="filter-bar" id="filterBar">
+    <div class="container">
+      <div class="filter-bar__inner">
+        <a class="filter-btn" href="portfolio.html" data-filter="all">All</a>
+        <a class="filter-btn" href="portfolio-branding.html" data-filter="branding">Branding</a>
+        <a class="filter-btn" href="portfolio-social.html" data-filter="social">Social Media Marketing</a>
+        <a class="filter-btn" href="portfolio-photo.html" data-filter="photo">Photo Production</a>
+        <a class="filter-btn active" href="portfolio-video.html" data-filter="video">Video Production</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       CINEMA REEL — Full-width stack
+       Click thumbnail → Vimeo modal
+       data-vimeo-id 값을 실제 ID로 교체하세요
+  ════════════════════════════════════════════ -->
+  <main class="cinema-reel">
+    <div class="cinema-reel__inner">
+
+      <!-- 01 — Cars And Hoops -->
+      <article class="reel-item" data-vimeo-id="76979871" data-title="Cars And Hoops" data-client="Brand Film · 2024">
+        <div class="reel-item__index-row">
+          <span class="reel-item__index">Cars And Hoops</span>
+          <span class="reel-item__cat">Brand Film</span>
+        </div>
+        <div class="reel-item__media" tabindex="0" role="button" aria-label="Play Cars And Hoops">
+          <img class="reel-item__poster" src="https://www.genspark.ai/api/files/s/Yi5xqCBI" alt="Cars And Hoops" loading="lazy" />
+          <div class="reel-item__play">
+            <div class="reel-item__play-btn">
+              <span class="reel-item__play-pulse"></span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="reel-item__overlay">
+            <h2 class="reel-item__title">Cars And Hoops</h2>
+          </div>
+        </div>
+        <div class="reel-item__meta">
+          <p class="reel-item__desc">A high-energy brand film blending automotive and street basketball culture — directed, shot, and edited in-house.</p>
+          <div class="reel-item__credits">
+            <div class="reel-credit"><span class="reel-credit__label">Year</span><span class="reel-credit__value">2024</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Format</span><span class="reel-credit__value">Brand Film</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Runtime</span><span class="reel-credit__value">01:42</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 — DL Acro 1 -->
+      <article class="reel-item" data-vimeo-id="76979871" data-title="DL Acro 1" data-client="Sports Film · 2024">
+        <div class="reel-item__index-row">
+          <span class="reel-item__index">DL Acro 1</span>
+          <span class="reel-item__cat">Sports Film</span>
+        </div>
+        <div class="reel-item__media" tabindex="0" role="button" aria-label="Play DL Acro 1">
+          <img class="reel-item__poster" src="https://www.genspark.ai/api/files/s/Jnd0hdTD" alt="DL Acro 1" loading="lazy" />
+          <div class="reel-item__play">
+            <div class="reel-item__play-btn">
+              <span class="reel-item__play-pulse"></span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="reel-item__overlay">
+            <h2 class="reel-item__title">DL Acro 1</h2>
+          </div>
+        </div>
+        <div class="reel-item__meta">
+          <p class="reel-item__desc">An aerial acrobatics performance captured with a multi-cam rig — choreographed motion meets cinematic framing.</p>
+          <div class="reel-item__credits">
+            <div class="reel-credit"><span class="reel-credit__label">Year</span><span class="reel-credit__value">2024</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Format</span><span class="reel-credit__value">Sports Film</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Runtime</span><span class="reel-credit__value">02:08</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 — DL Acro 2 -->
+      <article class="reel-item" data-vimeo-id="76979871" data-title="DL Acro 2" data-client="Sports Film · 2024">
+        <div class="reel-item__index-row">
+          <span class="reel-item__index">DL Acro 2</span>
+          <span class="reel-item__cat">Sports Film</span>
+        </div>
+        <div class="reel-item__media" tabindex="0" role="button" aria-label="Play DL Acro 2">
+          <img class="reel-item__poster" src="https://www.genspark.ai/api/files/s/tWPKsFss" alt="DL Acro 2" loading="lazy" />
+          <div class="reel-item__play">
+            <div class="reel-item__play-btn">
+              <span class="reel-item__play-pulse"></span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="reel-item__overlay">
+            <h2 class="reel-item__title">DL Acro 2</h2>
+          </div>
+        </div>
+        <div class="reel-item__meta">
+          <p class="reel-item__desc">Companion piece to DL Acro 1 — slow-motion sequences and on-set lighting design highlight every airborne moment.</p>
+          <div class="reel-item__credits">
+            <div class="reel-credit"><span class="reel-credit__label">Year</span><span class="reel-credit__value">2024</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Format</span><span class="reel-credit__value">Sports Film</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Runtime</span><span class="reel-credit__value">01:55</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 04 — F Diary Perfume -->
+      <article class="reel-item" data-vimeo-id="76979871" data-title="F Diary Perfume" data-client="Product Film · 2023">
+        <div class="reel-item__index-row">
+          <span class="reel-item__index">F Diary Perfume</span>
+          <span class="reel-item__cat">Product Film</span>
+        </div>
+        <div class="reel-item__media" tabindex="0" role="button" aria-label="Play F Diary Perfume">
+          <img class="reel-item__poster" src="https://www.genspark.ai/api/files/s/LQ2uKYjv" alt="F Diary Perfume" loading="lazy" />
+          <div class="reel-item__play">
+            <div class="reel-item__play-btn">
+              <span class="reel-item__play-pulse"></span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="reel-item__overlay">
+            <h2 class="reel-item__title">F Diary Perfume</h2>
+          </div>
+        </div>
+        <div class="reel-item__meta">
+          <p class="reel-item__desc">Macro-led product film for a fragrance launch — soft natural light, tactile textures, and a quiet narrative voiceover.</p>
+          <div class="reel-item__credits">
+            <div class="reel-credit"><span class="reel-credit__label">Year</span><span class="reel-credit__value">2023</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Format</span><span class="reel-credit__value">Product Film</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Runtime</span><span class="reel-credit__value">00:58</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 05 — Hanyang Industrial -->
+      <article class="reel-item" data-vimeo-id="76979871" data-title="Hanyang Industrial" data-client="Corporate · 2023">
+        <div class="reel-item__index-row">
+          <span class="reel-item__index">Hanyang Industrial</span>
+          <span class="reel-item__cat">Corporate Film</span>
+        </div>
+        <div class="reel-item__media" tabindex="0" role="button" aria-label="Play Hanyang Industrial">
+          <img class="reel-item__poster" src="https://www.genspark.ai/api/files/s/8CE5pvxK" alt="Hanyang Industrial" loading="lazy" />
+          <div class="reel-item__play">
+            <div class="reel-item__play-btn">
+              <span class="reel-item__play-pulse"></span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="reel-item__overlay">
+            <h2 class="reel-item__title">Hanyang Industrial</h2>
+          </div>
+        </div>
+        <div class="reel-item__meta">
+          <p class="reel-item__desc">Corporate brand film telling the story of an industrial manufacturer — sweeping factory floor cinematography paired with leadership interviews.</p>
+          <div class="reel-item__credits">
+            <div class="reel-credit"><span class="reel-credit__label">Year</span><span class="reel-credit__value">2023</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Format</span><span class="reel-credit__value">Corporate Film</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Runtime</span><span class="reel-credit__value">03:14</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 06 — MCST KOCCA Wild VR -->
+      <article class="reel-item" data-vimeo-id="76979871" data-title="MCST KOCCA Wild VR" data-client="Documentary · 2023">
+        <div class="reel-item__index-row">
+          <span class="reel-item__index">MCST KOCCA Wild VR</span>
+          <span class="reel-item__cat">VR / Documentary</span>
+        </div>
+        <div class="reel-item__media" tabindex="0" role="button" aria-label="Play MCST KOCCA Wild VR">
+          <img class="reel-item__poster" src="https://www.genspark.ai/api/files/s/zSrfbM1O" alt="MCST KOCCA Wild VR" loading="lazy" />
+          <div class="reel-item__play">
+            <div class="reel-item__play-btn">
+              <span class="reel-item__play-pulse"></span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="reel-item__overlay">
+            <h2 class="reel-item__title">MCST KOCCA Wild VR</h2>
+          </div>
+        </div>
+        <div class="reel-item__meta">
+          <p class="reel-item__desc">An immersive VR documentary commissioned by Korea's Ministry of Culture, Sports and Tourism — wildlife meets virtual reality storytelling.</p>
+          <div class="reel-item__credits">
+            <div class="reel-credit"><span class="reel-credit__label">Year</span><span class="reel-credit__value">2023</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Format</span><span class="reel-credit__value">VR Documentary</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Runtime</span><span class="reel-credit__value">06:22</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 07 — MCST Asean Doc -->
+      <article class="reel-item" data-vimeo-id="76979871" data-title="MCST Asean Doc" data-client="Documentary · 2023">
+        <div class="reel-item__index-row">
+          <span class="reel-item__index">MCST Asean Doc</span>
+          <span class="reel-item__cat">Documentary</span>
+        </div>
+        <div class="reel-item__media" tabindex="0" role="button" aria-label="Play MCST Asean Doc">
+          <img class="reel-item__poster" src="https://www.genspark.ai/api/files/s/9QS2fsvd" alt="MCST Asean Doc" loading="lazy" />
+          <div class="reel-item__play">
+            <div class="reel-item__play-btn">
+              <span class="reel-item__play-pulse"></span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="reel-item__overlay">
+            <h2 class="reel-item__title">MCST Asean Doc</h2>
+          </div>
+        </div>
+        <div class="reel-item__meta">
+          <p class="reel-item__desc">A long-form documentary tracing cultural exchange between Korea and ASEAN nations — shot across multiple countries over six months.</p>
+          <div class="reel-item__credits">
+            <div class="reel-credit"><span class="reel-credit__label">Year</span><span class="reel-credit__value">2023</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Format</span><span class="reel-credit__value">Documentary</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Runtime</span><span class="reel-credit__value">12:40</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 08 — Once Upon Shine Gala -->
+      <article class="reel-item" data-vimeo-id="76979871" data-title="Once Upon Shine Gala" data-client="Event Film · 2024">
+        <div class="reel-item__index-row">
+          <span class="reel-item__index">Once Upon Shine Gala</span>
+          <span class="reel-item__cat">Event Film</span>
+        </div>
+        <div class="reel-item__media" tabindex="0" role="button" aria-label="Play Once Upon Shine Gala">
+          <img class="reel-item__poster" src="https://www.genspark.ai/api/files/s/1ikb4TIV" alt="Once Upon Shine Gala" loading="lazy" />
+          <div class="reel-item__play">
+            <div class="reel-item__play-btn">
+              <span class="reel-item__play-pulse"></span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="reel-item__overlay">
+            <h2 class="reel-item__title">Once Upon Shine Gala</h2>
+          </div>
+        </div>
+        <div class="reel-item__meta">
+          <p class="reel-item__desc">Highlight reel of an annual gala evening — multi-cam coverage edited into a fast-paced, emotion-led recap.</p>
+          <div class="reel-item__credits">
+            <div class="reel-credit"><span class="reel-credit__label">Year</span><span class="reel-credit__value">2024</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Format</span><span class="reel-credit__value">Event Film</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Runtime</span><span class="reel-credit__value">02:30</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 09 — Fashion Film 1 -->
+      <article class="reel-item" data-vimeo-id="76979871" data-title="Fashion Film 1" data-client="Fashion Film · 2024">
+        <div class="reel-item__index-row">
+          <span class="reel-item__index">Fashion Film 1</span>
+          <span class="reel-item__cat">Fashion Film</span>
+        </div>
+        <div class="reel-item__media" tabindex="0" role="button" aria-label="Play Fashion Film 1">
+          <img class="reel-item__poster" src="https://www.genspark.ai/api/files/s/fhRWWxrV" alt="Fashion Film 1" loading="lazy" />
+          <div class="reel-item__play">
+            <div class="reel-item__play-btn">
+              <span class="reel-item__play-pulse"></span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="reel-item__overlay">
+            <h2 class="reel-item__title">Fashion Film 1</h2>
+          </div>
+        </div>
+        <div class="reel-item__meta">
+          <p class="reel-item__desc">Editorial fashion film — a stylised meditation on movement, fabric, and light. Shot on anamorphic lenses for a wide-frame look.</p>
+          <div class="reel-item__credits">
+            <div class="reel-credit"><span class="reel-credit__label">Year</span><span class="reel-credit__value">2024</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Format</span><span class="reel-credit__value">Fashion Film</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Runtime</span><span class="reel-credit__value">01:24</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 10 — Fashion Film 2 -->
+      <article class="reel-item" data-vimeo-id="76979871" data-title="Fashion Film 2" data-client="Fashion Film · 2024">
+        <div class="reel-item__index-row">
+          <span class="reel-item__index">Fashion Film 2</span>
+          <span class="reel-item__cat">Fashion Film</span>
+        </div>
+        <div class="reel-item__media" tabindex="0" role="button" aria-label="Play Fashion Film 2">
+          <img class="reel-item__poster" src="https://www.genspark.ai/api/files/s/KedwCBN6" alt="Fashion Film 2" loading="lazy" />
+          <div class="reel-item__play">
+            <div class="reel-item__play-btn">
+              <span class="reel-item__play-pulse"></span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="reel-item__overlay">
+            <h2 class="reel-item__title">Fashion Film 2</h2>
+          </div>
+        </div>
+        <div class="reel-item__meta">
+          <p class="reel-item__desc">Companion fashion film — a darker, contrast-rich follow-up exploring silhouette and shadow.</p>
+          <div class="reel-item__credits">
+            <div class="reel-credit"><span class="reel-credit__label">Year</span><span class="reel-credit__value">2024</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Format</span><span class="reel-credit__value">Fashion Film</span></div>
+            <div class="reel-credit"><span class="reel-credit__label">Runtime</span><span class="reel-credit__value">01:38</span></div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- ════════════════════════════════════════════
+       VIDEO MODAL (Vimeo embed)
+  ════════════════════════════════════════════ -->
+  <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Video player">
+    <div class="video-modal__inner">
+      <button class="video-modal__close" id="videoModalClose" aria-label="Close video">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="video-modal__iframe-wrap" id="videoModalIframeWrap"></div>
+      <div class="video-modal__caption" id="videoModalCaption">
+        <strong></strong><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       CTA BAND
+  ════════════════════════════════════════════ -->
+  <section class="cta-band section--dark" style="padding:clamp(80px,10vw,120px) 0;">
+    <div class="container">
+      <div class="cta-band__inner reveal">
+        <span class="t-label" style="color:rgba(255,255,255,0.4)">Let's Create Together</span>
+        <h2 class="cta-band__headline t-headline">Ready to Start<br />Your Project?</h2>
+        <div class="cta-band__actions">
+          <a href="contact.html" class="btn btn-outline-white">
+            <span>Book a Call</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__brand-name">MAMMA MIA</div>
+      <div class="footer__top">
+        <div class="footer__col">
+          <p class="footer__col-title">Navigation</p>
+          <nav class="footer__col-links">
+            <a href="index.html" class="footer__col-link">About Us</a>
+            <a href="price-plan.html" class="footer__col-link">Price Plan</a>
+            <a href="portfolio.html" class="footer__col-link">Portfolio</a>
+            <a href="contact.html" class="footer__col-link">Contact Us</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Contact</p>
+          <div class="footer__contact-item">
+            <p class="footer__contact-label">Email</p>
+            <a href="mailto:inquiry.mammamia@gmail.com" class="footer__contact-value footer__col-link">inquiry.mammamia@gmail.com</a>
+          </div>
+          <div class="footer__contact-item">
+            <p class="footer__contact-label">Address</p>
+            <p class="footer__contact-value">6511 Sussex Ave, Burnaby, BC V5H 0K5</p>
+          </div>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Services</p>
+          <nav class="footer__col-links">
+            <a href="portfolio-branding.html" class="footer__col-link">Branding</a>
+            <a href="portfolio-social.html" class="footer__col-link">Social Media Marketing</a>
+            <a href="portfolio-photo.html" class="footer__col-link">Photo Production</a>
+            <a href="portfolio-video.html" class="footer__col-link">Video Production</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 MAMMA MIA Marketing Agency. All rights reserved.</p>
+        <p class="footer__copy">Vancouver, BC, Canada</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script>
+    /* ────────────────────────────────────────────
+       Cinema Reel — reveal on scroll + Vimeo modal
+       ──────────────────────────────────────────── */
+    (function () {
+      // Scroll reveal
+      const items = document.querySelectorAll('.reel-item');
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+        items.forEach(el => io.observe(el));
+      } else {
+        items.forEach(el => el.classList.add('is-visible'));
+      }
+
+      // Modal elements
+      const modal       = document.getElementById('videoModal');
+      const modalClose  = document.getElementById('videoModalClose');
+      const iframeWrap  = document.getElementById('videoModalIframeWrap');
+      const captionEl   = document.getElementById('videoModalCaption');
+
+      function openModal(vimeoId, title, client) {
+        if (!vimeoId) return;
+        // Build Vimeo embed iframe
+        const src = `https://player.vimeo.com/video/${vimeoId}?autoplay=1&title=0&byline=0&portrait=0&dnt=1`;
+        iframeWrap.innerHTML =
+          `<iframe src="${src}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+        // Caption
+        captionEl.querySelector('strong').textContent = title || '';
+        captionEl.querySelector('span').textContent   = client || '';
+        // Open
+        modal.classList.add('is-open');
+        document.body.classList.add('modal-open');
+      }
+
+      function closeModal() {
+        modal.classList.remove('is-open');
+        document.body.classList.remove('modal-open');
+        // Stop video by clearing iframe
+        iframeWrap.innerHTML = '';
+      }
+
+      // Bind clicks on each reel item's media
+      document.querySelectorAll('.reel-item').forEach((article) => {
+        const media   = article.querySelector('.reel-item__media');
+        const vimeoId = article.dataset.vimeoId;
+        const title   = article.dataset.title;
+        const client  = article.dataset.client;
+        if (!media) return;
+
+        media.addEventListener('click', () => openModal(vimeoId, title, client));
+        media.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openModal(vimeoId, title, client);
+          }
+        });
+      });
+
+      // Close handlers
+      modalClose.addEventListener('click', closeModal);
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+      });
+    })();
+  </script>
+</body>
+</html>

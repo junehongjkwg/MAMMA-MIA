@@ -143,64 +143,291 @@
     });
   });
 
-  /* ---- Portfolio Mosaic — random images ---- */
+  /* ---- Portfolio Mosaic — MAMMA MIA actual work (mixed categories) ---- */
   const portfolioImages = [
-    'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=700&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=700&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=700&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1552566626-52f8b828add9?w=700&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=700&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=700&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=700&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=700&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1492692494035-7c2d5f0c9f4e?w=700&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=700&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=700&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=700&q=80&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&q=80&auto=format&fit=crop',
+    // Branding (9)
+    'https://www.genspark.ai/api/files/s/SvH5hcFY', // Branding Anthracite
+    'https://www.genspark.ai/api/files/s/VZpLI7wy', // Kitchen Il Forno
+    'https://www.genspark.ai/api/files/s/6b2BcHLB', // El Molino Brand Deck
+    'https://www.genspark.ai/api/files/s/Nuz0hH6o', // La Foret IG
+    'https://www.genspark.ai/api/files/s/RaXI7gQ3', // New Menu Promo 1
+    'https://www.genspark.ai/api/files/s/V4DeLbJm', // New Menu Promo 2
+    'https://www.genspark.ai/api/files/s/Rg0WNRcA', // New Menu Promo 3
+    'https://www.genspark.ai/api/files/s/sMcRCFhP', // Seasonal Promo
+    'https://www.genspark.ai/api/files/s/NOMIoabp', // Uber Eats Promo
+
+    // Social Media — Reels & Card News (19)
+    'https://www.genspark.ai/api/files/s/9RKUHcNz', // Brand Launching
+    'https://www.genspark.ai/api/files/s/hXWcpVLj', // Cafe Opening
+    'https://www.genspark.ai/api/files/s/LW2X8LCq', // Cocktail 1
+    'https://www.genspark.ai/api/files/s/RLwb3P5o', // Cocktail 2
+    'https://www.genspark.ai/api/files/s/rB96Jwhe', // Egg Benedict
+    'https://www.genspark.ai/api/files/s/S7T8Z70A', // Fashion Brand 1
+    'https://www.genspark.ai/api/files/s/4dZlfrN2', // Fashion Brand 2
+    'https://www.genspark.ai/api/files/s/UuKLjNc9', // Fashion Brand 3
+    'https://www.genspark.ai/api/files/s/ko8IWjOl', // Fashion Brand 4
+    'https://www.genspark.ai/api/files/s/HLB6rsrJ', // Fashion Brand 5
+    'https://www.genspark.ai/api/files/s/8o3u0O8n', // New Coffee Bear
+    'https://www.genspark.ai/api/files/s/pqyNZWhA', // New Dishes
+    'https://www.genspark.ai/api/files/s/1s2ve7zA', // Sotbab
+    'https://www.genspark.ai/api/files/s/3EehfBCn', // Venue
+    'https://www.genspark.ai/api/files/s/gJeN23Xd', // Fashion Week
+    'https://www.genspark.ai/api/files/s/qzXpxYuU', // Global Fashion Week
+    'https://www.genspark.ai/api/files/s/Wnm3XVVJ', // Health Supplement
+    'https://www.genspark.ai/api/files/s/yKU2goVp', // Korea Tourism
+    'https://www.genspark.ai/api/files/s/j2Zfxe3v', // Seoulgift Brand
+
+    // Photo Production — Food / Product / Portrait (40)
+    'https://www.genspark.ai/api/files/s/neFGiniX', // Food Burger
+    'https://www.genspark.ai/api/files/s/CYi4CdCy', // Food Chicken Wing
+    'https://www.genspark.ai/api/files/s/0d7cYmcz', // Food Cocktail
+    'https://www.genspark.ai/api/files/s/PN2kiG3P', // Food Cocktails
+    'https://www.genspark.ai/api/files/s/mTF2wwlc', // Food Korean Spice Noodle
+    'https://www.genspark.ai/api/files/s/Z3DGtmAR', // Food Martini Cocktail
+    'https://www.genspark.ai/api/files/s/B5K3kAt2', // Food New Dessert
+    'https://www.genspark.ai/api/files/s/ezbqtqhD', // Food Pasta
+    'https://www.genspark.ai/api/files/s/bummHgw2', // Food Pizza
+    'https://www.genspark.ai/api/files/s/Qb8F1hUK', // Food St Patrick
+    'https://www.genspark.ai/api/files/s/X0hwByka', // Food Tacos
+    'https://www.genspark.ai/api/files/s/I3QbnlId', // Apparel 1
+    'https://www.genspark.ai/api/files/s/dRHC7EvK', // Apparel 2
+    'https://www.genspark.ai/api/files/s/mPaEUCPu', // Apparel 3
+    'https://www.genspark.ai/api/files/s/BxYgSeLf', // Apparel 4
+    'https://www.genspark.ai/api/files/s/hpqQ5iyt', // Apparel 5
+    'https://www.genspark.ai/api/files/s/059o0Sa1', // Apparel 6
+    'https://www.genspark.ai/api/files/s/K9BTGp65', // Apparel 7
+    'https://www.genspark.ai/api/files/s/WQdjq5Hy', // Apparel 8
+    'https://www.genspark.ai/api/files/s/5MBkdwgN', // Arm Sleeve
+    'https://www.genspark.ai/api/files/s/wOJs8rDZ', // Engagement Ring
+    'https://www.genspark.ai/api/files/s/t0Awn76i', // Pantyhose
+    'https://www.genspark.ai/api/files/s/pNXHXWCf', // Studio Concept 1
+    'https://www.genspark.ai/api/files/s/n2QaqH3K', // Studio Concept 2
+    'https://www.genspark.ai/api/files/s/ebTGy8kq', // Studio Concept 3
+    'https://www.genspark.ai/api/files/s/zvGMriLE', // Retail Studio 1
+    'https://www.genspark.ai/api/files/s/mUwP9eA6', // Retail Studio 2
+    'https://www.genspark.ai/api/files/s/1LbUMaQZ', // Retail Studio 3
+    'https://www.genspark.ai/api/files/s/gZoEIdT9', // Thermo 1
+    'https://www.genspark.ai/api/files/s/Azx2mBDR', // Thermo 2
+    'https://www.genspark.ai/api/files/s/8u2WGMoa', // Thermo 3
+    'https://www.genspark.ai/api/files/s/oVpwLJJc', // Hani 1
+    'https://www.genspark.ai/api/files/s/ruebyWVP', // Hani 2
+    'https://www.genspark.ai/api/files/s/gLjRd4ei', // Hani 3
+    'https://www.genspark.ai/api/files/s/hkN9y5ke', // Heather 1
+    'https://www.genspark.ai/api/files/s/deQhz5hf', // Heather 2
+    'https://www.genspark.ai/api/files/s/6ssJgL3v', // Heather 3
+    'https://www.genspark.ai/api/files/s/kvRxwxYt', // Heather Sushi 1
+    'https://www.genspark.ai/api/files/s/WumrLwpE', // Heather Sushi 2
+    'https://www.genspark.ai/api/files/s/sX6vR2We', // Jeremy & Hani Sushi
+
+    // Video Production — Stills / Posters (10)
+    'https://www.genspark.ai/api/files/s/Yi5xqCBI', // Cars And Hoops
+    'https://www.genspark.ai/api/files/s/Jnd0hdTD', // DL Acro 1
+    'https://www.genspark.ai/api/files/s/tWPKsFss', // DL Acro 2
+    'https://www.genspark.ai/api/files/s/LQ2uKYjv', // F Diary Perfume
+    'https://www.genspark.ai/api/files/s/8CE5pvxK', // Hanyang Industrial
+    'https://www.genspark.ai/api/files/s/zSrfbM1O', // MCST KOCCA Wild VR
+    'https://www.genspark.ai/api/files/s/9QS2fsvd', // MCST Asean Doc
+    'https://www.genspark.ai/api/files/s/1ikb4TIV', // Once Upon Shine Gala
+    'https://www.genspark.ai/api/files/s/fhRWWxrV', // Fashion Film 1
+    'https://www.genspark.ai/api/files/s/KedwCBN6', // Fashion Film 2
   ];
 
-  // Grid layout: 9 cells — item 0 is wide (spans 2 cols), item 2 is tall (spans 2 rows)
-  const mosaicLayouts = [
-    { wide: 0, tall: 3 }, // first cell wide, 4th cell tall
-    { wide: 1, tall: 5 }, // 2nd wide, 6th tall
-    { wide: 2, tall: 0 }, // 3rd wide, 1st tall
-  ];
+  /* ============================================================
+     Mosaic Builder — Grid Matrix Algorithm (Method C)
+     ------------------------------------------------------------
+     1. 가상 행렬에 셀을 순서대로 배치 (big/wide/tall/sq)
+     2. 각 셀은 빈 공간(0)에만 들어가고, 자기 영역(1)을 점유
+     3. 그리드 채우는 도중 빈 칸이 남으면 1×1 sq 셀로 강제 채움
+     4. 마지막 행이 미완성이면 sq로 끝까지 메움
+     5. 뷰포트 폭에 따라 4 / 3 / 2 열로 반응형 동작
+     => 빈 영역 0% 보장
+  ============================================================ */
+  function getMosaicCols() {
+    const w = window.innerWidth;
+    if (w <= 460) return 2;
+    if (w <= 768) return 3;
+    return 4;
+  }
+  function getMosaicRows(cols) {
+    // 같은 셀 수(약 16칸)를 유지하기 위해 열에 따라 행 수 조정
+    if (cols === 2) return 8;
+    if (cols === 3) return 6;
+    return 4;
+  }
+
+  // 가능한 셀 토큰과 각각의 (cols, rows) 크기
+  const SIZE = {
+    big:  { c: 2, r: 2 }, // 2×2
+    wide: { c: 2, r: 1 }, // 2×1
+    tall: { c: 1, r: 2 }, // 1×2
+    sq:   { c: 1, r: 1 }, // 1×1
+  };
+
+  // 가중치: big은 가끔만 등장, wide/tall은 적당히, sq가 채움 역할
+  const SHAPE_BAG = ['big', 'wide', 'tall', 'wide', 'tall', 'sq', 'sq', 'sq', 'sq'];
+
+  function pickRandomShape() {
+    return SHAPE_BAG[Math.floor(Math.random() * SHAPE_BAG.length)];
+  }
+
+  // 가상 행렬에서 (col, row) 위치에 size(c×r) 셀이 들어갈 수 있는지 확인
+  function canFit(matrix, col, row, size, cols) {
+    if (col + size.c > cols) return false;
+    // 필요한 행이 부족하면 행을 확장 (자동 grow)
+    while (matrix.length < row + size.r) {
+      matrix.push(new Array(cols).fill(0));
+    }
+    for (let r = row; r < row + size.r; r++) {
+      for (let c = col; c < col + size.c; c++) {
+        if (matrix[r][c] === 1) return false;
+      }
+    }
+    return true;
+  }
+
+  // 행렬에 셀을 표시 (점유)
+  function place(matrix, col, row, size) {
+    for (let r = row; r < row + size.r; r++) {
+      for (let c = col; c < col + size.c; c++) {
+        matrix[r][c] = 1;
+      }
+    }
+  }
+
+  // 가장 첫번째 빈 칸의 (col, row) 반환, 없으면 null
+  function firstEmpty(matrix, cols) {
+    for (let r = 0; r < matrix.length; r++) {
+      for (let c = 0; c < cols; c++) {
+        if (matrix[r][c] === 0) return { col: c, row: r };
+      }
+    }
+    return null;
+  }
+
+  // 빈 칸 개수 (현재 행렬 기준)
+  function countEmpty(matrix, cols) {
+    let n = 0;
+    for (let r = 0; r < matrix.length; r++) {
+      for (let c = 0; c < cols; c++) {
+        if (matrix[r][c] === 0) n++;
+      }
+    }
+    return n;
+  }
 
   function buildMosaic() {
     const mosaic = document.getElementById('contactMosaic');
     if (!mosaic) return;
 
-    // Shuffle images
-    const shuffled = [...portfolioImages].sort(() => Math.random() - 0.5);
-    const layout = mosaicLayouts[Math.floor(Math.random() * mosaicLayouts.length)];
+    const cols = getMosaicCols();
+    const targetRows = getMosaicRows(cols);
 
+    const shuffled = [...portfolioImages].sort(() => Math.random() - 0.5);
     mosaic.innerHTML = '';
 
-    // Create 7 cells (wide = 2 cols, tall = 2 rows, rest = 1×1)
-    // Grid is 3 cols × 3 rows = 9 units; wide eats 2, tall eats 2, so 2+2+5×1 = 9 ✓
-    const cells = 7;
-    for (let i = 0; i < cells; i++) {
+    // 1. 가상 행렬 생성 (목표 행 수만큼 미리 0으로 초기화)
+    const matrix = [];
+    for (let r = 0; r < targetRows; r++) {
+      matrix.push(new Array(cols).fill(0));
+    }
+
+    // 2. 셀 배치 정보 수집 (col, row, size)
+    const cells = [];
+    let imageIdx = 0;
+    let attempts = 0;
+    const MAX_ATTEMPTS = 120; // 무한루프 방지
+
+    while (firstEmpty(matrix, cols) && attempts < MAX_ATTEMPTS) {
+      attempts++;
+      const empty = firstEmpty(matrix, cols);
+      if (!empty) break;
+
+      // 2열에서는 big(2x2)이 너무 크니 제외
+      let shape = pickRandomShape();
+      if (cols < 3 && shape === 'big') shape = 'sq';
+      let size = SIZE[shape];
+
+      // 현재 위치에 fit 안 되면 더 작은 토큰으로 fallback
+      if (!canFit(matrix, empty.col, empty.row, size, cols)) {
+        const fallback = ['wide', 'tall', 'sq'];
+        for (const f of fallback) {
+          if (canFit(matrix, empty.col, empty.row, SIZE[f], cols)) {
+            shape = f;
+            size = SIZE[f];
+            break;
+          }
+        }
+      }
+
+      // 마지막 안전장치: 무조건 sq로
+      if (!canFit(matrix, empty.col, empty.row, size, cols)) {
+        shape = 'sq';
+        size = SIZE.sq;
+      }
+
+      place(matrix, empty.col, empty.row, size);
+      cells.push({
+        col: empty.col,
+        row: empty.row,
+        shape: shape,
+        size: size,
+        src: shuffled[imageIdx % shuffled.length],
+      });
+      imageIdx++;
+    }
+
+    // 3. 행렬에 빈 칸이 남아있으면 1×1로 강제 채우기 (안전망)
+    let safety = 0;
+    while (countEmpty(matrix, cols) > 0 && safety < 60) {
+      safety++;
+      const empty = firstEmpty(matrix, cols);
+      if (!empty) break;
+      place(matrix, empty.col, empty.row, SIZE.sq);
+      cells.push({
+        col: empty.col,
+        row: empty.row,
+        shape: 'sq',
+        size: SIZE.sq,
+        src: shuffled[imageIdx % shuffled.length],
+      });
+      imageIdx++;
+    }
+
+    // 4. DOM 렌더링 — 명시적 grid-area로 위치 고정
+    cells.forEach((cell) => {
       const item = document.createElement('div');
       item.className = 'portfolio-mosaic__item';
-      if (i === layout.wide) item.classList.add('portfolio-mosaic__item--wide');
-      if (i === layout.tall) item.classList.add('portfolio-mosaic__item--tall');
+      if (cell.shape === 'big')  item.classList.add('portfolio-mosaic__item--big');
+      if (cell.shape === 'wide') item.classList.add('portfolio-mosaic__item--wide');
+      if (cell.shape === 'tall') item.classList.add('portfolio-mosaic__item--tall');
+
+      // grid-area: row-start / col-start / row-end / col-end
+      item.style.gridArea =
+        `${cell.row + 1} / ${cell.col + 1} / ${cell.row + 1 + cell.size.r} / ${cell.col + 1 + cell.size.c}`;
 
       const img = document.createElement('img');
-      img.src = shuffled[i % shuffled.length];
+      img.src = cell.src;
       img.alt = 'Portfolio work by MAMMA MIA';
       img.loading = 'lazy';
       img.addEventListener('load', () => img.classList.add('loaded'));
-      // If already cached
       if (img.complete) img.classList.add('loaded');
 
       item.appendChild(img);
       mosaic.appendChild(item);
-    }
+    });
   }
 
   buildMosaic();
+
+  // 5. 반응형 — 뷰포트 폭이 바뀌면 모자이크 재구성 (디바운스)
+  let resizeTimer = null;
+  let lastCols = getMosaicCols();
+  window.addEventListener('resize', () => {
+    const currentCols = getMosaicCols();
+    if (currentCols === lastCols) return; // 열 수가 안 바뀌면 재빌드 X
+    lastCols = currentCols;
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(buildMosaic, 200);
+  });
 
 })();

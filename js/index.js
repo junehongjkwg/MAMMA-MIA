@@ -7,7 +7,7 @@
   'use strict';
 
   /* ================================================================
-     0. HERO SLIDESHOW — 3초 간격 자동 전환
+     0. HERO SLIDESHOW — 1.5초 간격 자동 전환
   ================================================================ */
   const heroSlideEls = document.querySelectorAll('.hero__slide');
   if (heroSlideEls.length > 1) {
@@ -16,7 +16,7 @@
       heroSlideEls[heroSlideIdx].classList.remove('active');
       heroSlideIdx = (heroSlideIdx + 1) % heroSlideEls.length;
       heroSlideEls[heroSlideIdx].classList.add('active');
-    }, 3000);
+    }, 1500);
   }
 
   /* ================================================================

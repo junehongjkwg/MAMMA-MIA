@@ -8,10 +8,10 @@
   /* ---- Tab Navigation ---- */
   const tabs = document.querySelectorAll('.pricing-tab');
   const sections = {
-    social:   document.getElementById('social'),
     branding: document.getElementById('branding'),
-    video:    document.getElementById('video'),
+    social:   document.getElementById('social'),
     photo:    document.getElementById('photo'),
+    video:    document.getElementById('video'),
   };
 
   // 안전한 nav 높이 계산 (NaN 방지)
@@ -39,13 +39,13 @@
   });
 
   /* ---- Highlight active tab on scroll ---- */
-  const sectionIds = ['social', 'branding', 'video', 'photo'];
+  const sectionIds = ['branding', 'social', 'photo', 'video'];
   const navH = getNavHeight();
   const tabH = getTabsHeight();
 
   function updateActiveTab() {
     const scrollY = window.scrollY + navH + tabH + 40;
-    let current = 'social';
+    let current = 'branding';
 
     sectionIds.forEach(id => {
       const el = document.getElementById(id);
